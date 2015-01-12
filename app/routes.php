@@ -20,3 +20,8 @@ Route::get('/signup', function()
 {
 	return View::make('signup');
 });
+
+Route::get('/login', function()
+{
+	return View::make('login');
+});
