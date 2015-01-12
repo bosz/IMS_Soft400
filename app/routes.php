@@ -15,3 +15,11 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/index', function(){
+	return View::make('index');
+});
+
+Route::get('/layout', function(){
+	return View::make('layout');
+});
