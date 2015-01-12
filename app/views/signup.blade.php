@@ -1,5 +1,12 @@
+<!-- This layout is extended from the layout blade template -->
+
 @extends('layout')
 
+@section('title')
+	<title>Sign up - IMS_Soft400</title>
+@stop
+
+<!-- This is the section that act as the content -->
 @section('content')
 <ol class="breadcrumb">
 			<li><a href="index.html">Home</a></li>
@@ -18,7 +25,7 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h3 class="thin text-center">Register a new account</h3>
-							<p class="text-center text-muted">Register a new account to the IMS_Soft400 platform or if you have an account already, click on <a href="signin.html">Login</a> link to login directly </p>
+							<p class="text-center text-muted">Register a new account to the IMS_Soft400 platform or if you have an account already, click on {{ HTML::link('login', 'Log In') }} link to login directly </p>
 							<hr>
 
 							<form>
