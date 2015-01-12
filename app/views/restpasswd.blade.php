@@ -33,7 +33,7 @@
 
 								<div class="row">
 									<div class="col-lg-5 text-right pull-right">
-										<button class="btn btn-action" type="submit">Rest Password</button>
+										<button class="btn btn-action" type="submit">Reset Password</button>
 									</div>
 								</div>
 							</form>
