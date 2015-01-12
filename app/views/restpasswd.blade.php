@@ -32,8 +32,8 @@
 								<hr>
 
 								<div class="row">
-									<div class="col-lg-4 text-right">
-										<button class="btn btn-action pull-left" type="submit">Rest Password</button>
+									<div class="col-lg-5 text-right pull-right">
+										<button class="btn btn-action" type="submit">Rest Password</button>
 									</div>
 								</div>
 							</form>
