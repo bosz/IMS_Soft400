@@ -23,7 +23,9 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h3 class="thin text-center">Sign in to your account</h3>
-							<p class="text-center text-muted">Lorem ipsum dolor sit amet, {{ HTML::link('/signup', 'Register') }} adipisicing elit. Quo nulla quibusdam cum doloremque incidunt nemo sunt a tenetur omnis odio. </p>
+							<p class="text-center text-muted">Login to your account to the IMS_Soft400 platform or 
+							if you have an account already, click on {{ HTML::link('Sign Up', 'Register') }}
+							 link to register an account if you don't have one. </p>
 							<hr>
 							
 							<form>
