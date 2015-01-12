@@ -58,8 +58,8 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="lead">AWESOME ONLINE INVENTORY MANAGEMENT SYSTEM</h1>
-				<p class="tagline">PROGRESSUS: free business bootstrap template by <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a></p>
-				<p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p>
+				<p class="tagline">PROGRESSUS: free business bootstrap template by progressus</p>
+				
 			</div>
 		</div>
 	</header>
@@ -121,11 +121,18 @@
 		<br>
 
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-4">
 				<h3>Which code editor would you recommend?</h3>
 				<p>I'd highly recommend you <a href="http://www.sublimetext.com/">Sublime Text</a> - a free to try text editor which I'm using daily. Awesome tool!</p>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-4">
+				<h3>Nice header. Where do I find more images like that one?</h3>
+				<p>
+					Well, there are thousands of stock art galleries, but personally, 
+					I prefer to use photos from these sites: <a href="http://unsplash.com">Unsplash.com</a> 
+					and <a href="http://www.flickr.com/creativecommons/by-2.0/tags/">Flickr - Creative Commons</a></p>
+			</div>
+			<div class="col-sm-4">
 				<h3>Nice header. Where do I find more images like that one?</h3>
 				<p>
 					Well, there are thousands of stock art galleries, but personally, 

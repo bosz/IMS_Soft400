@@ -31,3 +31,9 @@ Route::get('/login', function()
 	return View::make('login');
 
 });
+
+Route::get('/restpasswd', function()
+{
+	return View::make('restpasswd');
+
+});

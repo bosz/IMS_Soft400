@@ -16,7 +16,7 @@
 			<!-- Article main content -->
 			<article class="col-xs-12 maincontent">
 				<header class="page-header">
-					<h1 class="page-title">Sign in</h1>
+					<h1 class="page-title">Rest Password</h1>
 				</header>
 				
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
@@ -25,22 +25,15 @@
 							
 							<form>
 								<div class="top-margin">
-									<label>Username/Email <span class="text-danger">*</span></label>
+									<label>Email <span class="text-danger">*</span></label>
 									<input type="text" class="form-control">
-								</div>
-								<div class="top-margin">
-									<label>Password <span class="text-danger">*</span></label>
-									<input type="password" class="form-control">
 								</div>
 
 								<hr>
 
 								<div class="row">
-									<div class="col-lg-8">
-										<b><a href="">Forgot password?</a></b>
-									</div>
 									<div class="col-lg-4 text-right">
-										<button class="btn btn-action" type="submit">Sign in</button>
+										<button class="btn btn-action pull-left" type="submit">Rest Password</button>
 									</div>
 								</div>
 							</form>
