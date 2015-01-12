@@ -9,14 +9,14 @@
 	<title>Awesome Online Inventory Management Systems</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	<link href="{{ asset('_css/bootstrap.min.css')}}" rel="stylesheet" media="screen, projection">
-	<link href="{{ asset('_css/font-awesome.min.css')}}" rel="stylesheet" media="screen, projection">
+	<link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet" media="screen, projection">
+	<link href="{{ asset('css/font-awesome.min.css')}}" rel="stylesheet" media="screen, projection">
 	
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 
 	<!-- Custom styles for our template -->
-	<link href="{{ asset('_css/bootstrap-theme.css')}}" rel="stylesheet" media="screen, projection">
-	<link href="{{ asset('_css/main.css')}}" rel="stylesheet" media="screen, projection">
+	<link href="{{ asset('css/bootstrap-theme.css')}}" rel="stylesheet" media="screen, projection">
+	<link href="{{ asset('css/main.css')}}" rel="stylesheet" media="screen, projection">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -85,25 +85,25 @@
 			
 			<div class="row">
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><img src="{{ asset('_images/inventory.png') }}" alt="thataway" />Inventory Management</h4></div>
+					<div class="h-caption"><h4><img src="{{ asset('images/inventory.png') }}" alt="thataway" />Inventory Management</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><img src="{{ asset('_images/accounts.png') }}" alt="thataway" />Customer Accounts</h4></div>
+					<div class="h-caption"><h4><img src="{{ asset('images/accounts.png') }}" alt="thataway" />Customer Accounts</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><img src="{{ asset('_images/reports.png') }}" alt="thataway" />Financial Reports</h4></div>
+					<div class="h-caption"><h4><img src="{{ asset('images/reports.png') }}" alt="thataway" />Financial Reports</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><img src="{{ asset('_images/inventory.png') }}" alt="thataway" />Author's support</h4></div>
+					<div class="h-caption"><h4><img src="{{ asset('images/inventory.png') }}" alt="thataway" />Author's support</h4></div>
 					<div class="h-body text-center">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
 					</div>
@@ -251,8 +251,8 @@
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<link href="{{ asset('_js/headroom.min.js')}}" rel="stylesheet" media="screen, projection">
-	<link href="{{ asset('_js/jQuery.headroom.min.js')}}" rel="stylesheet" media="screen, projection">
-	<link href="{{ asset('_js/template.js')}}" rel="stylesheet" media="screen, projection">
+	<link href="{{ asset('js/headroom.min.js')}}" rel="stylesheet" media="screen, projection">
+	<link href="{{ asset('js/jQuery.headroom.min.js')}}" rel="stylesheet" media="screen, projection">
+	<link href="{{ asset('js/template.js')}}" rel="stylesheet" media="screen, projection">
 </body>
 </html>
