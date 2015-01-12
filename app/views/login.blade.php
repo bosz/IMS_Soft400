@@ -4,6 +4,10 @@
 	<title>LogIn - IMS_Soft400</title>
 @stop
 
+@section('button')
+	<li class="active">{{ HTML::link('signup', 'SIGN UP', array('class' => 'btn'))}}</a></li>
+@stop
+
 @section('content')
 	
 	<ol class="breadcrumb">
@@ -24,7 +28,7 @@
 						<div class="panel-body">
 							<h3 class="thin text-center">Sign in to your account</h3>
 							<p class="text-center text-muted">Login to your account to the IMS_Soft400 platform or 
-							if you have an account already, click on {{ HTML::link('Sign Up', 'Register') }}
+							if you have an account already, click on {{ HTML::link('signup', 'Register') }}
 							 link to register an account if you don't have one. </p>
 							<hr>
 							

@@ -6,6 +6,10 @@
 	<title>Sign up - IMS_Soft400</title>
 @stop
 
+@section('button')
+	<li class="active">{{ HTML::link('login', 'SIGN IN', array('class' => 'btn'))}}</a></li>
+@stop
+
 <!-- This is the section that act as the content -->
 @section('content')
 <ol class="breadcrumb">

@@ -47,7 +47,7 @@
 						</ul>
 					</li>
 					<li><a href="contact.html">Contact</a></li>
-					<li class="active"><a class="btn" href="signin.php">SIGN IN / SIGN UP</a></li>
+					@yield('button')
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
