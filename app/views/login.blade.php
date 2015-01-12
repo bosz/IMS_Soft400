@@ -26,15 +26,11 @@
 				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 					<div class="panel panel-default">
 						<div class="panel-body">
-<<<<<<< HEAD
 							<h3 class="thin text-center">Sign in to your account</h3>
 							<p class="text-center text-muted">Login to your account to the IMS_Soft400 platform or 
 							if you have an account already, click on {{ HTML::link('signup', 'Register') }}
 							 link to register an account if you don't have one. </p>
 							<hr>
-=======
->>>>>>> roc4rd
-							
 							<form>
 								<div class="top-margin">
 									<label>Username/Email <span class="text-danger">*</span></label>
