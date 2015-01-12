@@ -6,7 +6,8 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	
-	<title>Sign up - IMS_Soft400</title>
+	@yield('title')
+	
 
 	<link rel="shortcut icon" href="{{ asset('images/gt_favicon.png') }}">
 	
@@ -59,7 +60,7 @@
 	<div class="container">
 
 		@yield('content')
-		
+
 	</div>	<!-- /container -->
 	
 
