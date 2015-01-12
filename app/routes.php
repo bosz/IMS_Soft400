@@ -16,10 +16,16 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+<<<<<<< HEAD
 Route::get('/index', function(){
 	return View::make('index');
 });
 
 Route::get('/layout', function(){
 	return View::make('layout');
+=======
+Route::get('/signup', function()
+{
+	return View::make('signup');
+>>>>>>> 37b68fc0a291c6bc9aec3757cda2c7ebcf07c4aa
 });
