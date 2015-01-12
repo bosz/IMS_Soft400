@@ -27,5 +27,13 @@ Route::get('/layout', function(){
 Route::get('/signup', function()
 {
 	return View::make('signup');
+<<<<<<< HEAD
 >>>>>>> 37b68fc0a291c6bc9aec3757cda2c7ebcf07c4aa
+=======
+});
+
+Route::get('/login', function()
+{
+	return View::make('login');
+>>>>>>> cf85b8d3b806b765a7fb61d676fa06bd8361a34c
 });
