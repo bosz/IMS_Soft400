@@ -37,3 +37,9 @@ Route::get('/restpasswd', function()
 	return View::make('restpasswd');
 
 });
+
+Route::post('/register_action', function()
+{
+        $obj = new RegisterController() ;
+        return $obj->store();
+});

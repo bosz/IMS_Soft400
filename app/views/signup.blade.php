@@ -29,28 +29,49 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 
-							<form>
+							@if ($errors->any())
+							 
+							<ul style="color:red;">
+							 
+							{{ implode('', $errors->all('<li>:message</li>')) }}
+							 
+							</ul>
+							 
+							@endif
+							 
+							@if (Session::has('message'))
+							 
+							<p>{{ Session::get('message') }}</p>
+							 
+							@endif
+
+							{{ Form::open(array('url' => 'register_action', 'method' => 'post')) }}
 								<div class="top-margin">
 									<label>First Name</label>
-									<input type="text" class="form-control">
+									{{ Form::text('fname', Input::old('fname'), array('placeholder'=>'First Name',
+									 'class' => 'form-control')) }}
 								</div>
 								<div class="top-margin">
 									<label>Last Name</label>
-									<input type="text" class="form-control">
+									{{ Form::text('lname', Input::old('lname'), array('placeholder'=>'Last Name',
+									 'class' => 'form-control')) }}
 								</div>
 								<div class="top-margin">
 									<label>Email Address <span class="text-danger">*</span></label>
-									<input type="text" class="form-control">
+									{{ Form::text('email', Input::old('email'), array('placeholder'=>'e.g. example@domain.com',
+									 'class' => 'form-control')) }}
 								</div>
 
 								<div class="row top-margin">
 									<div class="col-sm-6">
 										<label>Password <span class="text-danger">*</span></label>
-										<input type="text" class="form-control">
+										{{ Form::password('password', array('placeholder'=>'Password',
+									 'class' => 'form-control')) }}
 									</div>
 									<div class="col-sm-6">
 										<label>Confirm Password <span class="text-danger">*</span></label>
-										<input type="text" class="form-control">
+										{{ Form::password('cpassword', array('placeholder'=>'Confirm Password',
+									 'class' => 'form-control')) }}
 									</div>
 								</div>
 
@@ -64,10 +85,10 @@
 										</label>                        
 									</div>
 									<div class="col-lg-4 text-right">
-										<button class="btn btn-action" type="submit">Register</button>
+										{{ Form::submit('Submit', array('class' => 'btn btn-action')) }}
 									</div>
 								</div>
-							</form>
+							{{ Form::close() }}
 						</div>
 					</div>
 
