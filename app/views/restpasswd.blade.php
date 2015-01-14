@@ -26,7 +26,8 @@
 							<form>
 								<div class="top-margin">
 									<label>Email <span class="text-danger">*</span></label>
-									<input type="text" class="form-control">
+									{{ Form::text('email', Input::old('email'), array('placeholder'=>'e.g. example@domain.com',
+									 'class' => 'form-control')) }}
 								</div>
 
 								<hr>
