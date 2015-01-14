@@ -37,11 +37,13 @@
 							<form>
 								<div class="top-margin">
 									<label>Username/Email <span class="text-danger">*</span></label>
-									<input type="text" class="form-control">
+									{{ Form::text('email', Input::old('email'), array('placeholder'=>'e.g. example@domain.com',
+									 'class' => 'form-control')) }}
 								</div>
 								<div class="top-margin">
 									<label>Password <span class="text-danger">*</span></label>
-									<input type="password" class="form-control">
+									{{ Form::password('password', array('placeholder'=>'Valid Password',
+									 'class' => 'form-control')) }}
 								</div>
 
 								<hr>
@@ -51,7 +53,7 @@
 										<b>{{ HTML::link('restpasswd', 'Forgot Password?') }}</b>
 									</div>
 									<div class="col-lg-4 text-right">
-										<button class="btn btn-action" type="submit">Sign in</button>
+										{{ Form::submit('Sign In', array('class' => 'btn btn-action')) }}
 									</div>
 								</div>
 							</form>
