@@ -89,25 +89,30 @@
 				<div class="col-md-3 col-sm-6 highlight">
 					<div class="h-caption"><h4><img src="{{ asset('images/inventory.png') }}" alt="thataway" />Inventory Management</h4></div>
 					<div class="h-body text-center">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?</p>
+						<p>Manage your inventory and check supply levels in real-time. 
+						Receive low inventory notifications and generate Purchase 
+						Orders to replenish your stock.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
 					<div class="h-caption"><h4><img src="{{ asset('images/accounts.png') }}" alt="thataway" />Customer Accounts</h4></div>
 					<div class="h-body text-center">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
+						<p>With a built-in CRM you can keep track of all your customer accounts with ease. 
+						Add multiple contacts, private notes, and review their purchase history. </p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
 					<div class="h-caption"><h4><img src="{{ asset('images/reports.png') }}" alt="thataway" />Financial Reports</h4></div>
 					<div class="h-body text-center">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
+						<p>Generate extremely detailed financial reports for both your inventory and services. 
+						Filter your reports by date-range and category to see what's making you the most money.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><img src="{{ asset('images/inventory.png') }}" alt="thataway" />Author's support</h4></div>
+					<div class="h-caption"><h4><img src="{{ asset('images/inventory.png') }}" alt="thataway" />Invoice & Estimate</h4></div>
 					<div class="h-body text-center">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi atque temporibus facere corporis eos expedita? </p>
+						<p> Create beautiful, professional invoices & estimates in just a few seconds and 
+						then instantly email them as PDF's directly to your customers or prospects.</p>
 					</div>
 				</div>
 			</div> <!-- /row  -->
