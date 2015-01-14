@@ -11,7 +11,7 @@
 @section('content')
 	
 	<ol class="breadcrumb">
-			<li><a href="index.html">Home</a></li>
+			<li>{{ HTML::link('/', 'Home') }}</li>
 			<li class="active">User access</li>
 		</ol>
 
@@ -28,6 +28,12 @@
 						<div class="panel-body">
 							<h3 class="thin text-center">Sign in to your account</h3>
 							<hr>
+							@if(Session::has('success'))
+							    <div class="alert alert-success">
+							        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							    <strong>Account Created Successfully!</strong> {{ Session::get('message', '') }}
+							    </div>
+							@endif
 							<form>
 								<div class="top-margin">
 									<label>Username/Email <span class="text-danger">*</span></label>

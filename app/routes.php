@@ -43,3 +43,8 @@ Route::post('/register_action', function()
         $obj = new RegisterController() ;
         return $obj->store();
 });
+
+/*Route::get('signup/verify/{confirmationCode}', [
+    'as' => 'confirmation_path',
+    'uses' => 'RegistrationController@confirm'
+]);*/

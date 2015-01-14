@@ -19,6 +19,7 @@ class CreateUser extends Migration {
 			$newTable->string('email')->unique();
 			$newTable->string('password', 128);
 			$newTable->string('cpassword', 128);
+			$newTable->string('confirmation_code')->nullable();
 			$newTable->string('remember_token', 100);
 			$newTable->timestamps();
 		});

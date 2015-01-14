@@ -40,10 +40,12 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="sidebar-left.html">Left Sidebar</a></li>
-							<li><a href="sidebar-right.html">Right Sidebar</a></li>
+							<li><a href="#">Inventory Managemetn</a></li>
+							<li><a href="#">Customer Account</a></li>
+							<li><a href="#">Financial Reports</a></li>
+							<li><a href="#">Author's Support</a></li>
 						</ul>
 					</li>
 					<li><a href="contact.html">Contact</a></li>
@@ -97,10 +99,16 @@
 					</div>
 
 					<div class="col-md-6 widget">
-						<h3 class="widget-title">Text widget</h3>
+						<h3 class="widget-title">About Online Inventory Management</h3>
 						<div class="widget-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
-							<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+							<p>Our Sales, Success, and Support Teams are there for every stage of your onboarding onto T
+							radeGecko. Once you start your trial, an Account Manager will call to establish how we can 
+							meet your specific needs and get you started on using our inventory management software. 
+							We are also ready for any question 
+							you might have, and have prepared plenty of tutorials in our Help Center. </p>
+							<p>So you get more than just inventory management software and support, you 
+							gain access to lots of valuable resources on how to better manage your 
+							inventory and improve your wholesale business – now that’s what we call value adding.</p>
 						</div>
 					</div>
 
@@ -115,11 +123,9 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="simplenav">
-								<a href="#">Home</a> | 
+								{{ HTML::link('/', 'Home') }} | 
 								<a href="about.html">About</a> |
-								<a href="sidebar-right.html">Sidebar</a> |
-								<a href="contact.html">Contact</a> |
-								<b><a href="signup.html">Sign up</a></b>
+								<a href="#">Contact</a>
 							</p>
 						</div>
 					</div>
@@ -127,7 +133,7 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="text-right">
-								Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+								Copyright &copy; 2014, Design by MIRD Team
 							</p>
 						</div>
 					</div>

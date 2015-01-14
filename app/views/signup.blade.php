@@ -13,7 +13,7 @@
 <!-- This is the section that act as the content -->
 @section('content')
 <ol class="breadcrumb">
-			<li><a href="index.html">Home</a></li>
+			<li>{{ HTML::link('/', 'Home') }}</li>
 			<li class="active">Registration</li>
 		</ol>
 
@@ -38,11 +38,12 @@
 							</ul>
 							 
 							@endif
-							 
-							@if (Session::has('message'))
-							 
-							<p>{{ Session::get('message') }}</p>
-							 
+
+							@if(Session::has('success'))
+							    <div class="alert alert-success">
+							        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+							    <strong>Account Created Successfully!</strong> {{ Session::get('message', '') }}
+							    </div>
 							@endif
 
 							{{ Form::open(array('url' => 'register_action', 'method' => 'post')) }}
