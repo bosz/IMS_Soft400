@@ -37,8 +37,8 @@ class RegisterController extends \BaseController {
                     'fname'       => 'required',
                     'lname'      => 'required',
                     'email'   => 'required|email|unique:users',
-                    'password'  => 'required|min:10|same:cpassword',
-                    'cpassword'  => 'required|min:10'
+                    'password'  => 'required|min:5|same:cpassword',
+                    'cpassword'  => 'required|min:5'
                 ) ;
 
 			$message = array(
