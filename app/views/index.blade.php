@@ -68,6 +68,9 @@
 	<!-- /Header -->
 
 	<!-- Intro -->
+	@if(Session::has('alertMessage'))
+         <span class="badge alert-success"><strong>Session::get('alertMessage')</strong></span>
+     @endif 
 	<div class="container text-center">
 		<br> <br>
 		<h2 class="thin">The best place manage your inventory</h2>

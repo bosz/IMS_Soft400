@@ -49,10 +49,9 @@ Route::get('/user', function()
 
 });
 
-
-Route::get('/restpasswd', function()
+Route::get('/remind', function()
 {
-	return View::make('restpasswd');
+	return View::make('remind');
 
 });
 
@@ -61,6 +60,31 @@ Route::post('/register_action', function()
         $obj = new RegisterController() ;
         return $obj->store();
 });
+
+
+//creating the reminder form
+Route::get('password/rest', array(
+		'uses' => 'PasswordController@remind',
+		'as' => 'password.remind'
+));
+
+//sending the request email
+Route::post('password/rest', array(
+		'uses' => 'PasswordController@request',
+		'as' => 'password.request'
+));
+
+//creating a reset form
+Route::get('password/reset/{token}', array(
+  'uses' => 'PasswordController@reset',
+  'as' => 'password.reset'
+));
+
+//updating the password
+Route::post('password/reset/{token}', array(
+  'uses' => 'PasswordController@update'
+));
+
 
 /*Route::get('signup/verify/{confirmationCode}', [
     'as' => 'confirmation_path',
