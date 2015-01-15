@@ -28,12 +28,7 @@ return array(
 	|
 	*/
 
-<<<<<<< HEAD
 	'host' => 'smtp.sendgrid.net',
-=======
-	//'host' => 'smtp.sendgrid.net',
-	'host' => 'smtp.gmail.com',
->>>>>>> roc4rd
 
 	/*
 	|--------------------------------------------------------------------------
@@ -46,11 +41,7 @@ return array(
 	|
 	*/
 
-<<<<<<< HEAD
 	//'port' => '587,
-=======
-	//'port' => 587,
->>>>>>> roc4rd
 	'port' => '587',
 
 	/*
@@ -64,11 +55,7 @@ return array(
 	|
 	*/
 
-<<<<<<< HEAD
 	'from' => array('address' => 'ims-soft400@gmail.com', 'name' => 'IMS Soft400'),
-=======
-	'from' => array('address' => 'info@ims-soft.co', 'name' => null),
->>>>>>> roc4rd
 
 	/*
 	|--------------------------------------------------------------------------
@@ -94,11 +81,7 @@ return array(
 	|
 	*/
 
-<<<<<<< HEAD
 	'username' => 'Derick',
-=======
-	'username' => 'sashaempty88@gmail.com',
->>>>>>> roc4rd
 
 	/*
 	|--------------------------------------------------------------------------
@@ -111,11 +94,7 @@ return array(
 	|
 	*/
 
-<<<<<<< HEAD
 	'password' => 'imssoft400',
-=======
-	'password' => 'telefunk3n',
->>>>>>> roc4rd
 
 	/*
 	|--------------------------------------------------------------------------
