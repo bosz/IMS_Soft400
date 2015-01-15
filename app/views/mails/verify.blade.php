@@ -4,10 +4,12 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h2>Verify Your Email Address</h2>
+        <h2>Congratulations Dear User!</h2>
 
         <div>
-            Thanks for creating an account with IMS Soft Application.
+            Thanks for registering your account on the <b> IMS Soft400 </b> platform.
+             Your Email has been confirmed in our system already, so you can login to your 
+             account now.
         </div>
 
     </body>

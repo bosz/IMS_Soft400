@@ -47,13 +47,6 @@ class RegisterController extends \BaseController {
 			                   'password.same'      => 'The :attribute and confirm password field must match.',
 			               );
 
-			/*$data = Input::only(
-            'fname',
-            'lname',
-            'email',
-            'password',
-            'cpassword'
-        	);*/
  
             $validator = Validator::make($data,$rule,$message);
 
@@ -73,9 +66,10 @@ class RegisterController extends \BaseController {
 			    $user->confirmation_code = $confirmation_code;
 			    $user->save();
 			 
-			    Mail::send('mails.verify', array('fname' => Input::get('fname')), function($message)
+			    Mail::send('mails.verify', array('fname' => Input::get('fname')), 
+			    function($message)
 				{
-				    //$message->from('ims-soft@gmail.com', 'IMS Soft400');
+				    $message->from('ims-soft@gmail.com', 'IMS Soft400');
 
 				    $message->to(Input::get('email'));
 
@@ -87,18 +81,6 @@ class RegisterController extends \BaseController {
 				        }
 	   	 }
  
-            /*if ($validator->fails())
-            {
-                    return Redirect::to('signup')
-                            ->withErrors($validator->messages());
-            }
-            else
-            {
-                    Register::saveFormData(Input::except(array('_token','cpassword')));
- 
-                    return Redirect::to('signup')->with('success', true)
-                    		->with('message','Go to your email and verity account');
-            }*/
 
 	public function confirm($confirmation_code)
     {

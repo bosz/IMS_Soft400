@@ -60,7 +60,7 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="lead">AWESOME ONLINE INVENTORY MANAGEMENT SYSTEM</h1>
-				<p class="tagline">The Inventory Management Systemof Successful Merchants</p>
+				<p class="tagline">The Inventory Management System of Successful Merchants</p>
 				
 			</div>
 		</div>

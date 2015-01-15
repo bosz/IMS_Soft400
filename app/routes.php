@@ -46,5 +46,5 @@ Route::post('/register_action', function()
 
 /*Route::get('signup/verify/{confirmationCode}', [
     'as' => 'confirmation_path',
-    'uses' => 'RegistrationController@confirm'
+    'uses' => 'RegisterController@confirm'
 ]);*/
