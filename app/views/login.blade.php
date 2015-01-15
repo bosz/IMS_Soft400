@@ -28,13 +28,24 @@
 						<div class="panel-body">
 							<h3 class="thin text-center">Sign in to your account</h3>
 							<hr>
+
+							@if ($errors->any())
+							 
+							<ul style="color:red;">
+							 
+							{{ implode('', $errors->all('<li>:message</li>')) }}
+							 
+							</ul>
+							 
+							@endif
+
 							@if(Session::has('success'))
 							    <div class="alert alert-success">
 							        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 							    <strong>Account Created Successfully!</strong> {{ Session::get('message', '') }}
 							    </div>
 							@endif
-							<form>
+							{{ Form::open(array('url' => 'login')) }}
 								<div class="top-margin">
 									<label>Username/Email <span class="text-danger">*</span></label>
 									{{ Form::text('email', Input::old('email'), array('placeholder'=>'e.g. example@domain.com',
@@ -56,7 +67,7 @@
 										{{ Form::submit('Sign In', array('class' => 'btn btn-action')) }}
 									</div>
 								</div>
-							</form>
+							{{ Form::close() }}
 						</div>
 					</div>
 

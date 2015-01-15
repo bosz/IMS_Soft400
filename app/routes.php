@@ -26,11 +26,29 @@ Route::get('/signup', function()
 
 });
 
+/*
 Route::get('/login', function()
 {
 	return View::make('login');
 
 });
+*/
+
+//route to show the login form
+Route::get('login', array('uses' => 'LoginController@showLogin'));
+
+//route to process the form
+Route::post('login', array('uses' => 'LoginController@doLogin'));
+
+//route to logout the user
+Route::get('logout', array('uses' => 'LoginController@doLogout'));
+
+Route::get('/user', function()
+{
+	return View::make('user');
+
+});
+
 
 Route::get('/restpasswd', function()
 {
