@@ -11,6 +11,9 @@
 |
 */
 
+
+
+
 Route::get('/', function()
 {
 	return View::make('index');
@@ -20,9 +23,9 @@ Route::get('/layout', function(){
 	return View::make('layout');
 });
 
-Route::get('/signup', function()
+Route::get('/register/signup', function()
 {
-	return View::make('signup');
+	return View::make('/register/signup');
 
 });
 
@@ -55,7 +58,7 @@ Route::get('/remind', function()
 
 });
 
-Route::post('/register_action', function()
+Route::post('/register/register_action', function()
 {
         $obj = new RegisterController() ;
         return $obj->store();
@@ -90,3 +93,20 @@ Route::post('password/reset/{token}', array(
     'as' => 'confirmation_path',
     'uses' => 'RegisterController@confirm'
 ]);*/
+
+/*=============================================================*/
+/* 			This is the second later of the App(system) which is
+/* 			signing up the user to the grand database          */
+/*=============================================================*/
+
+Route::post('/register_user', function()
+{
+        $create_user = new RegisterUserController() ;
+        return $create_user->store();
+});
+
+Route::get('/register/signup_user', function()
+{
+	return View::make('register/signup_user');
+
+});

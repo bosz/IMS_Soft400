@@ -48,7 +48,7 @@
 						</ul>
 					</li>
 					<li><a href="contact.html">Contact</a></li>
-					<li>{{ HTML::link('signup', 'SIGN IN / SIGN UP', array('class' => 'btn')) }}</li>
+					<li>{{ HTML::link('/register/signup', 'SIGN IN / SIGN UP', array('class' => 'btn')) }}</li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>

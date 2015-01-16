@@ -1,6 +1,6 @@
 <?php
 
-class RegisterController extends \BaseController {
+class RegisterUserController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -31,14 +31,16 @@ class RegisterController extends \BaseController {
 	 */
 	public function store()
 	{
-			//$confirmation_code = str_random(30);
+			$confirmation_code = str_random(30);
 		    $data =  Input::except(array('_token')) ;
             $rule  =  array(
+            	    'company'    => 'required',
                     'fname'       => 'required',
                     'lname'      => 'required',
                     'email'   => 'required|email|unique:users',
                     'password'  => 'required|min:5|same:cpassword',
-                    'cpassword'  => 'required|min:5'
+                    'cpassword'  => 'required|min:5',
+                    'phone'   => 'required'
                 ) ;
 
 			$message = array(
@@ -57,20 +59,57 @@ class RegisterController extends \BaseController {
 	        
 	        else
 	        {
-			    $user = new User;
+			    $user = new CreatedUser;
+			    $user->company = Input::get('company');
 			    $user->fname = Input::get('fname');
 			    $user->lname = Input::get('lname');
 			    $user->email = Input::get('email');
 			    $user->password = Hash::make(Input::get('password'));
 			    $user->cpassword = Hash::make(Input::get('cpassword'));
-			    //$user->confirmation_code = $confirmation_code;
+			    $user->phone = Input::get('phone');
+			    $user->confirmation_code = $confirmation_code;
 			    $user->save();
 			 
-			    return Redirect::to('/register/signup_user')->with('success', true)
-                    		->with('message','Create An account on IMS Soft400');
+			    Mail::send('mails.verify_account', array('fname' => Input::get('fname')), 
+			    function($message)
+				{
+				    $message->from('ims-soft@gmail.com', 'IMS Soft400');
+
+				    $message->to(Input::get('email'));
+
+				    $message->subject('Account Successfully Created!');
+				});
+			 
+			    return Redirect::to('login')->with('success', true)
+                    		->with('message','Verify this in your Email.');
 				        }
-	}
+	   	 }
  
+
+	public function confirm($confirmation_code)
+    {
+        if( ! $confirmation_code)
+        {
+            throw new InvalidConfirmationCodeException;
+        }
+
+        $user = User::whereConfirmationCode($confirmation_code)->first();
+
+        if ( ! $user)
+        {
+            throw new InvalidConfirmationCodeException;
+        }
+
+        $user->confirmed = 1;
+        $user->confirmation_code = null;
+        $user->save();
+
+        Flash::message('You have successfully verified your account.');
+
+        return Redirect::to('login');
+    }
+
+
 	/**
 	 * Display the specified resource.
 	 *
