@@ -4,9 +4,11 @@
 	<title>User Page - IMS_Soft400</title>
 @stop
 
-@section('content')
-	<h1>Welcome User</h1>
+@section('button')
+	<li class="active">{{ HTML::link('logout', 'LOG OUT', array('class' => 'btn')) }}</a></li>
+@stop
 
-	<a href="{{ URL::to('logout') }}">Logout</a>
+@section('content')
+	<h1><u>Welcome to the Dash Board</u></h1>
 
 @stop
