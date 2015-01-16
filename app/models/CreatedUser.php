@@ -15,7 +15,7 @@ class CreatedUser extends Eloquent implements UserInterface, RemindableInterface
 	 * @var string
 	 */
 	 
-	//protected $table1 = 'created_users';
+	protected $table = 'created_users';
 
 	/**
 	 * The attributes excluded from the model's JSON form.

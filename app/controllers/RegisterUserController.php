@@ -29,7 +29,7 @@ class RegisterUserController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function storeUser()
 	{
 			$confirmation_code = str_random(30);
 		    $data =  Input::except(array('_token')) ;
@@ -37,7 +37,7 @@ class RegisterUserController extends \BaseController {
             	    'company'    => 'required',
                     'fname'       => 'required',
                     'lname'      => 'required',
-                    'email'   => 'required|email|unique:users',
+                    'email'   => 'required|email|unique:created_users',
                     'password'  => 'required|min:5|same:cpassword',
                     'cpassword'  => 'required|min:5',
                     'phone'   => 'required'
@@ -80,7 +80,7 @@ class RegisterUserController extends \BaseController {
 				    $message->subject('Account Successfully Created!');
 				});
 			 
-			    return Redirect::to('login')->with('success', true)
+			    return Redirect::to('/login/login')->with('success', true)
                     		->with('message','Verify this in your Email.');
 				        }
 	   	 }
@@ -93,7 +93,7 @@ class RegisterUserController extends \BaseController {
             throw new InvalidConfirmationCodeException;
         }
 
-        $user = User::whereConfirmationCode($confirmation_code)->first();
+        $user = CreatedUser::whereConfirmationCode($confirmation_code)->first();
 
         if ( ! $user)
         {
@@ -106,7 +106,7 @@ class RegisterUserController extends \BaseController {
 
         Flash::message('You have successfully verified your account.');
 
-        return Redirect::to('login');
+        return Redirect::to('/login/login');
     }
 
 

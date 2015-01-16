@@ -7,7 +7,7 @@
 @stop
 
 @section('button')
-	<li class="active">{{ HTML::link('login', 'SIGN IN', array('class' => 'btn'))}}</a></li>
+	<li class="active">{{ HTML::link('/login/login', 'SIGN IN', array('class' => 'btn'))}}</a></li>
 @stop
 
 <!-- This is the section that act as the content -->

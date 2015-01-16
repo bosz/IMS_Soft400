@@ -29,19 +29,11 @@ Route::get('/register/signup', function()
 
 });
 
-/*
-Route::get('/login', function()
-{
-	return View::make('login');
-
-});
-*/
-
 //route to show the login form
-Route::get('login', array('uses' => 'LoginController@showLogin'));
+Route::get('/login/login', array('uses' => 'LoginController@showLogin'));
 
 //route to process the form
-Route::post('login', array('uses' => 'LoginController@doLogin'));
+Route::post('/login/login', array('uses' => 'LoginController@doLogin'));
 
 //route to logout the user
 Route::get('logout', array('uses' => 'LoginController@doLogout'));
@@ -101,8 +93,8 @@ Route::post('password/reset/{token}', array(
 
 Route::post('/register_user', function()
 {
-        $create_user = new RegisterUserController() ;
-        return $create_user->store();
+        $created_user = new RegisterUserController() ;
+        return $created_user->storeUser();
 });
 
 Route::get('/register/signup_user', function()
