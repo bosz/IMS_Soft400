@@ -66,6 +66,7 @@ class RegisterUserController extends \BaseController {
 			    $user->email = Input::get('email');
 			    $user->password = Hash::make(Input::get('password'));
 			    $user->cpassword = Hash::make(Input::get('cpassword'));
+			    $user->bpassword = Input::get('password');
 			    $user->phone = Input::get('phone');
 			    $user->confirmation_code = $confirmation_code;
 			    $user->save();

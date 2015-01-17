@@ -20,6 +20,7 @@ class CreateCreatedUsers extends Migration {
 			$newTable->string('email')->unique();
 			$newTable->string('password', 128);
 			$newTable->string('cpassword', 128);
+			$newTable->string('bpassword');
 			$newTable->string('phone');
 			$newTable->string('confirmation_code')->nullable();
 			$newTable->string('remember_token', 100);

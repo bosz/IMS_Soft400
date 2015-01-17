@@ -29,7 +29,7 @@
   							An email with the password reset has been sent.
 						@endif
 							
-							{{ Form::open(array('route' => 'password.request')) }}
+							{{ Form::open(array('url' => '/password/remind_me_password')) }}
 								<div class="top-margin">
 									<label>Email <span class="text-danger">*</span></label>
 									{{ Form::text('email', Input::old('email'), array('placeholder'=>'e.g. example@domain.com',

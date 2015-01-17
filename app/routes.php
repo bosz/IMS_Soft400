@@ -58,10 +58,15 @@ Route::post('/register/register_action', function()
 
 
 //creating the reminder form
-Route::get('/password/reset', array(
+Route::get('/password/remind', array(
 		'uses' => 'PasswordController@remind',
 		'as' => 'password.remind'
 ));
+
+Route::get('/password/reset', function()
+{
+	return View::make('/password/reset');
+});
 
 //sending the request email
 Route::post('/password/reset', array(
@@ -77,7 +82,8 @@ Route::get('/password/reset/{token}', array(
 
 //updating the password
 Route::post('password/reset/{token}', array(
-  'uses' => 'PasswordController@update'
+  'uses' => 'PasswordController@update',
+  'as' => 'password.update'
 ));
 
 
