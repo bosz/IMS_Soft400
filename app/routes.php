@@ -44,9 +44,9 @@ Route::get('/user', function()
 
 });
 
-Route::get('/remind', function()
+Route::get('/password/remind', function()
 {
-	return View::make('remind');
+	return View::make('/password/remind');
 
 });
 
@@ -58,19 +58,19 @@ Route::post('/register/register_action', function()
 
 
 //creating the reminder form
-Route::get('password/rest', array(
+Route::get('/password/reset', array(
 		'uses' => 'PasswordController@remind',
 		'as' => 'password.remind'
 ));
 
 //sending the request email
-Route::post('password/rest', array(
+Route::post('/password/reset', array(
 		'uses' => 'PasswordController@request',
 		'as' => 'password.request'
 ));
 
 //creating a reset form
-Route::get('password/reset/{token}', array(
+Route::get('/password/reset/{token}', array(
   'uses' => 'PasswordController@reset',
   'as' => 'password.reset'
 ));
@@ -81,10 +81,7 @@ Route::post('password/reset/{token}', array(
 ));
 
 
-/*Route::get('signup/verify/{confirmationCode}', [
-    'as' => 'confirmation_path',
-    'uses' => 'RegisterController@confirm'
-]);*/
+
 
 /*=============================================================*/
 /* 			This is the second later of the App(system) which is

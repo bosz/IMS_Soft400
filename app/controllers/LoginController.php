@@ -60,8 +60,9 @@ class LoginController extends BaseController {
 	public function doLogout(){
 
 		Auth::logout(); //log the user out
+		Session::flush();
 
-		return Redirect::to('/login/login'); //redirect to home
+		return Redirect::to('/login/login')->with('message', 'You Logged Out of the System'); //redirect to home
 	}
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-class PasswordController extends BaseController {
+class PasswordController extends \BaseController {
 	
 	public function remind(){
 

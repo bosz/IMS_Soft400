@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-	<title>Reset - IMS_Soft400</title>
+	<title>Password Reminder - IMS_Soft400</title>
 @stop
 
 @section('content')
@@ -24,35 +24,23 @@
 						<div class="panel-body">
 
 						@if (Session::has('error'))
-						  {{ trans(Session::get('reason')) }}
+  							{{ trans(Session::get('reason')) }}
+						@elseif (Session::has('success'))
+  							An email with the password reset has been sent.
 						@endif
 							
-							{{ Form::open(array('route' => array('PasswordController@update', $token))) }}
+							{{ Form::open(array('route' => 'password.request')) }}
 								<div class="top-margin">
-									<label>Username/Email <span class="text-danger">*</span></label>
+									<label>Email <span class="text-danger">*</span></label>
 									{{ Form::text('email', Input::old('email'), array('placeholder'=>'e.g. example@domain.com',
 									 'class' => 'form-control')) }}
 								</div>
-
-								<div class="top-margin">
-									<label>Password <span class="text-danger">*</span></label>
-									{{ Form::password('password', array('placeholder'=>'Password',
-									 'class' => 'form-control')) }}
-								</div>
-
-								<div class="top-margin">
-									<label>Confirm Password <span class="text-danger">*</span></label>
-									{{ Form::password('cpassword', array('placeholder'=>'Password',
-									 'class' => 'form-control')) }}
-								</div>
-
-								{{ Form::hidden('token', $token) }}
 
 								<hr>
 
 								<div class="row">
 									<div class="col-lg-5 text-right pull-right">
-										{{ Form::submit('Submit', array('class' => 'btn btn-action')) }}
+										{{ Form::submit('Reset Password', array('class' => 'btn btn-action')) }}
 									</div>
 								</div>
 							{{ Form::close() }}

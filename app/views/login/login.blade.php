@@ -61,7 +61,7 @@
 
 								<div class="row">
 									<div class="col-lg-8">
-										<b>{{ HTML::link('remind', 'Forgot Password?') }}</b>
+										<b>{{ HTML::link('/password/remind', 'Forgot Password?') }}</b>
 									</div>
 									<div class="col-lg-4 text-right">
 										{{ Form::submit('Sign In', array('class' => 'btn btn-action')) }}
