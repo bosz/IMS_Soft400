@@ -44,7 +44,7 @@ class LoginController extends BaseController {
 
 				//validation successful!
 				$lastname = Input::get('lname');
-				return View::make('user')->with('lastname', $lastname);
+				return View::make('/back_end/user')->with('lastname', $lastname);
 				//return Redirect::to('user');
 				echo 'SUCCESS!';
 			}

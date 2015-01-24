@@ -38,9 +38,9 @@ Route::post('/login/login', array('uses' => 'LoginController@doLogin'));
 //route to logout the user
 Route::get('logout', array('uses' => 'LoginController@doLogout'));
 
-Route::get('/user', function()
+Route::get('/back_end/user', function()
 {
-	return View::make('user');
+	return View::make('/back_end/user');
 
 });
 

@@ -138,9 +138,10 @@
 			<div class="col-sm-4">
 				<h3>Why Inventory Management?</h3>
 				<p>
-					Well, there are thousands of stock art galleries, but personally, 
-					I prefer to use photos from these sites: <a href="http://unsplash.com">Unsplash.com</a> 
-					and <a href="http://www.flickr.com/creativecommons/by-2.0/tags/">Flickr - Creative Commons</a></p>
+				The <em><b>Inventory Management System</b></em> is a real-time inventory database capable of
+				connecting multiple stores. This can be used to track the inventory of a single store, or to
+				manage the distribution of stock between several branches of a larger franchise.
+				</p>
 			</div>
 			<div class="col-sm-4">
 				<h3>Nice header. Where do I find more images like that one?</h3>
