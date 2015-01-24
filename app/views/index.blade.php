@@ -132,11 +132,11 @@
 
 		<div class="row">
 			<div class="col-sm-4">
-				<h3>Which code editor would you recommend?</h3>
+				<h3>What is an Online Inventory Management System?</h3>
 				<p>I'd highly recommend you <a href="http://www.sublimetext.com/">Sublime Text</a> - a free to try text editor which I'm using daily. Awesome tool!</p>
 			</div>
 			<div class="col-sm-4">
-				<h3>Nice header. Where do I find more images like that one?</h3>
+				<h3>Why Inventory Management?</h3>
 				<p>
 					Well, there are thousands of stock art galleries, but personally, 
 					I prefer to use photos from these sites: <a href="http://unsplash.com">Unsplash.com</a> 
@@ -166,7 +166,10 @@
 		</div> <!-- /row -->
 
 		<div class="jumbotron top-space">
-			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
+			<h4>IMS SOFT400 is Software Engineering project given to us Level 400 Student in the University 
+			of Buea to defend it for the complition of one of our courses(CEF415: Technical Writing). As a result 
+			we should be able to Build an online Inventory management system for both our University and our country 
+			Cameroon.</h4>
      		<p class="text-right"><a class="btn btn-primary btn-large">Learn more »</a></p>
   		</div>
 
