@@ -90,7 +90,7 @@
 			
 			<div class="row">
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><img src="{{ asset('images/inventory.png') }}" alt="thataway" />Inventory Management</h4></div>
+					<div class="h-caption"><h4><img src="{{ asset('images/activity.png') }}" alt="thataway" />Inventory Management</h4></div>
 					<div class="h-body text-center">
 						<p>Manage your inventory and check supply levels in real-time. 
 						Receive low inventory notifications and generate Purchase 
@@ -112,7 +112,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><img src="{{ asset('images/inventory.png') }}" alt="thataway" />Invoice & Estimate</h4></div>
+					<div class="h-caption"><h4><img src="{{ asset('images/billing.png') }}" alt="thataway" />Invoice & Estimate</h4></div>
 					<div class="h-body text-center">
 						<p> Create beautiful, professional invoices & estimates in just a few seconds and 
 						then instantly email them as PDF's directly to your customers or prospects.</p>
