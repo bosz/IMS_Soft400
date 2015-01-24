@@ -45,7 +45,7 @@
 							    <strong>Account Created Successfully!</strong> {{ Session::get('message', '') }}
 							    </div>
 							@endif
-							{{ Form::open(array('url' => '/login/login')) }}
+							{{ Form::open(array('url' => '/back_end/user')) }}
 								<div class="top-margin">
 									<label>Username/Email <span class="text-danger">*</span></label>
 									{{ Form::text('email', Input::old('email'), array('placeholder'=>'e.g. example@domain.com',

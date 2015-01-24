@@ -33,7 +33,7 @@ Route::get('/register/signup', function()
 Route::get('/login/login', array('uses' => 'LoginController@showLogin'));
 
 //route to process the form
-Route::post('/login/login', array('uses' => 'LoginController@doLogin'));
+Route::post('/back_end/user', array('uses' => 'LoginController@doLogin'));
 
 //route to logout the user
 Route::get('logout', array('uses' => 'LoginController@doLogout'));
