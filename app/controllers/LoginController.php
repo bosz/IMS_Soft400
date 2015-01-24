@@ -27,7 +27,7 @@ class LoginController extends BaseController {
 
 		//if the validate fails, redirect back to the form
 		if($validator->fails()){
-			return Redirect::to('/back_end/user')
+			return Redirect::to('/back_end/login')
 				->withErrors($validator) //send back all errors to the login form
 				->withInput(Input::except('password')); //send back the input (not the password) so that we can repopulate the form
 		}
@@ -43,15 +43,16 @@ class LoginController extends BaseController {
 			if(Auth::attempt($userdata)){
 
 				//validation successful!
-				$lastname = Input::get('lname');
-				return View::make('/back_end/user')->with('lastname', $lastname);
+				$email = Input::get('email');
+				return View::make('/back_end/user')->with('success', true)->
+				with('email', $email);
 				//return Redirect::to('user');
 				echo 'SUCCESS!';
 			}
 			else {
 
 				//validation not sucessful, send back to form
-				return Redirect::to('/back_end/user');
+				return Redirect::to('/login/login');
 			}
 		}
 		
