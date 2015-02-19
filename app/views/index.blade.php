@@ -37,17 +37,17 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
 					<li class="active">{{ HTML::link('/', 'Home') }}</li>
-					<li><a href="about.html">About</a></li>
+					<li><li>{{ HTML::link('/about', 'About') }}</li></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Inventory Managemetn</a></li>
+							<li><a href="#">Inventory Management</a></li>
 							<li><a href="#">Customer Account</a></li>
 							<li><a href="#">Financial Reports</a></li>
 							<li><a href="#">Author's Support</a></li>
 						</ul>
 					</li>
-					<li><a href="contact.html">Contact</a></li>
+					<li>{{ HTML::link('/contact', 'Contact') }}</li>
 					<li>{{ HTML::link('/register/signup', 'SIGN IN / SIGN UP', array('class' => 'btn')) }}</li>
 				</ul>
 			</div><!--/.nav-collapse -->
