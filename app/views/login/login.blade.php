@@ -74,7 +74,7 @@
 				</div>
 				
 			</article>
-			<!-- /Article -->
+			<!-- /Article for the page-->
 
 		</div>
 
