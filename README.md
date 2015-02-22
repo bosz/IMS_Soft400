@@ -10,7 +10,7 @@ Program for 22th - 28th, 2015
 
 Note: Each module has to be developed along side its reports so as to sync our work.
 
-#List of Team Members with Module
+#List of Team Members with Modules
 
 * Fonji Fonkeng Rocard (Sales Module)
 * Isidore Fru Che (Purchase Module)
