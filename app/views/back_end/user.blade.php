@@ -18,7 +18,19 @@
                        <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
                    </li>
                     <li>
-                       <a  href="ui.html"><i class="fa fa-desktop fa-3x"></i> <b>Inventory Management</b></a>
+                       <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Inventory Management</b></a>
+                       <ul style="list-style: none;">
+                            <li>{{ HTML::link('/back_end/inventoryList', 'Inventory List', 
+                              array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
+                              font-size: 16px; color: white; padding: 10px;')) }}</li>
+                            <li>{{ HTML::link('/back_end/manageCategories', 'Manage Categories', 
+                              array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
+                              font-size: 16px; color: white; padding: 10px;')) }}</li>
+                            <li>{{ HTML::link('/back_end/manageAttributes', 'Manage Attributes', 
+                              array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
+                              font-size: 16px; color: white; padding: 10px;')) }}</li>
+                       </ul>
+                       </li>
                    </li>
                    <li>
                        <a  href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i><b> Sales </b></a>
