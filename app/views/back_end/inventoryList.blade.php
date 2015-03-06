@@ -15,7 +15,7 @@
 			
 				
                    <li>
-                       <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
+                       <a class="active-menu"  href="{{URL::to('/back_end/user')}}"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
                    </li>
                     <li>
                        <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Inventory Management</b></a>

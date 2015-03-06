@@ -15,7 +15,7 @@
 			
 				
                    <li>
-                       <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
+                       <a class="active-menu"  href="{{URL::to('/back_end/user')}}"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
                    </li>
                     <li>
                        <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Inventory Management</b></a>
@@ -71,7 +71,9 @@
                     </b></p>
                 </li>
                 <li>
-                  <p>Phone Number: </p>
+                  <p>Phone Number:  <b>
+                                    Fix Needed
+                  </b></p>
                 </li>
               </ul>
            </div>
@@ -80,18 +82,24 @@
               <hr />
               <ul style="list-style: none;">
                 <li>
-                  <p>Today's Date: </p>
+                  <p>Today's Date: <b>&nbsp;&nbsp;&nbsp;{{ date('d/m/y') }}
+                  Time Zone (GMT + 01)</b></p>
                 </li>
                 <li>
-                  <p>Last Login at: </p>
+                  <p>Last Login at: Fix Needed</p>
                 </li>
                 <li>
-                  <p>Contact(Phone Number): </p>
+                  <p>Contact(Phone Number): Fix Needed</p>
                 </li>
                 <li>
-                  <p>Descripion: </p>
+                  <p>Descripion: <i><b>You are a verified user of the system</b></i></p>
                 </li>
               </ul>
            </div>
+           <hr />
+           <div id="dashboard">
+             
+           </div>
+
        </div>
 @stop
