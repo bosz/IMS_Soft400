@@ -350,6 +350,31 @@ font-size: 12px;
 line-height: 1.428571429;
 }
 
+#accountinfo {
+    border: 1px solid grey;
+    border-radius: 1px;
+    height: 320px;
+    width: 50%;
+}
+
+#generalinfo {
+    border: 1px solid grey;
+    border-radius: 1px;
+    position: relative;
+    left: 51%;
+    top: -320px;
+    height: 320px;
+    width: 50%;
+}
+
+#accountinfo p {
+    color: grey;
+}
+
+#generalinfo p {
+    color: grey;
+}
+
 /*==============================================
     MEDIA QUERIES     
     =============================================*/
