@@ -105,3 +105,23 @@ Route::get('/register/signup_user', function()
 	return View::make('register/signup_user');
 
 });
+
+//This is for backend routine
+
+Route::get('/back_end/inventoryList', function()
+{
+	return View::make('/back_end/inventoryList');
+
+});
+
+Route::get('/back_end/manageCategories', function()
+{
+	return View::make('/back_end/manageCategories');
+
+});
+
+Route::get('/back_end/manageAttributes', function()
+{
+	return View::make('/back_end/manageAttributes');
+
+});

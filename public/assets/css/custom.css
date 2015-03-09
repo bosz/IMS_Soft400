@@ -24,8 +24,7 @@ body {
 #page-wrapper {
     padding: 15px 15px;
     min-height: 600px;
-    background:#F3F3F3;
-   
+    background:#F3F3F3;   
 }
 #page-inner {
     width:100%;
@@ -350,13 +349,47 @@ font-size: 12px;
 line-height: 1.428571429;
 }
 
+#accountinfo {
+    border: 1px solid grey;
+    border-radius: 1px;
+    height: 320px;
+    width: 50%;
+}
+
+#generalinfo {
+    border: 1px solid grey;
+    border-radius: 1px;
+    position: relative;
+    left: 51%;
+    top: -320px;
+    height: 320px;
+    width: 50%;
+}
+
+#accountinfo p {
+    color: grey;
+}
+
+#generalinfo p {
+    color: grey;
+}
+
+#dashboard {
+    border: 1px solid grey;
+    height: 800px;
+    position: relative;
+    top: -350px;
+    width: 101%;
+    padding-bottom: -400px;
+}
+
 /*==============================================
     MEDIA QUERIES     
     =============================================*/
  
  @media(min-width:768px) {
      #page-wrapper{
-               margin: 0 0 0 260px;
+        margin: 0 0 -400px 260px;
         padding: 15px 30px;
         min-height: 1200px;
 		
