@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="{{ asset('css/bootstrap-theme.css') }}" media="screen" >
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 	<link rel="stylesheet" href="{{ asset('js/dataTables/dataTables.bootstrap.css') }}">
-	<link rel="stylesheet" href="{{ assert('js/morris/morris-0.4.3.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('js/morris/morris-0.4.3.min.css') }}">
 	
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
