@@ -38,11 +38,16 @@ Route::post('/back_end/userDashboard', array('uses' => 'LoginController@doLogin'
 //route to logout the user
 Route::get('logout', array('uses' => 'LoginController@doLogout'));
 
-Route::get('/back_end/userDashboard', function()
+/*Route::get('/back_end/userDashboard', function()
 {
 	return View::make('/back_end/userDashboard');
 
-});
+});*/
+
+Route::get('/back_end/userDashboard', array(
+		'uses' => 'LoginController@dashboard',
+		'as' => 'dasboard.dashboard'
+));
 
 Route::get('/password/remind', function()
 {
@@ -114,11 +119,10 @@ Route::get('/back_end/addProduct', function()
 
 });
 
-Route::get('/back_end/manageProduct', function()
-{
-	return View::make('/back_end/manageProduct');
-
-});
+Route::get('/back_end/manageProduct', array(
+		'uses' => 'InventoryController@displayInformation',
+		'as' => 'manageproduct.displayInformation'
+));
 
 //Routes to handle Catergory Module
 
@@ -136,4 +140,10 @@ Route::post('/back_end/addproduct', function()
 {
         $addproduct = new InventoryController();
         return $addproduct->store();
+});
+
+Route::post('/back_end/addcategory', function()
+{
+        $addcategory = new CategoryController();
+        return $addcategory->store();
 });

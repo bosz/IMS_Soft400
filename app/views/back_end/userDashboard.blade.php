@@ -59,21 +59,13 @@
               <hr />
               <ul style="list-style: none;">
                 <li>
-                  <p>First Name: <b>&nbsp;&nbsp;&nbsp;@foreach($fname as $name)
-                                     {{$name->fname}}
-                                  @endforeach
-                  (Status: Online)</b></p>
+                  <p>First Name: <b>{{Auth::user()->fname}} (Status: Online)</b></p>
                 </li>
                 <li>
-                  <p>Last Name: <b>&nbsp;&nbsp;&nbsp;@foreach($lname as $name)
-                                     {{$name->lname}}
-                                  @endforeach
-                  (Status: Online)</b></p>
+                  <p>Last Name: <b>{{Auth::user()->lname}} (Status: Online)</b></p>
                 </li>
                 <li>
-                  <p>Email Address: <b>@foreach($email as $mail)
-                                     {{$mail->email}}
-                                  @endforeach
+                  <p>Email Address: <b>{{Auth::user()->email}}</b>
                     </b></p>
                 </li>
                 <li>
