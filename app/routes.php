@@ -16,6 +16,7 @@ Route::get('/', function()
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 <<<<<<< HEAD
@@ -28,6 +29,8 @@ Route::get('/', function()
 
 >>>>>>> rocardho
 >>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+=======
+>>>>>>> d3r1ck
 	return View::make('index');
 });
 
@@ -123,11 +126,15 @@ Route::get('/register/signup_user', function()
 
 //This is for backend routine
 
-Route::get('/back_end/addProduct', function()
-{
-	return View::make('/back_end/addProduct');
+Route::get('/back_end/addProduct', array(
+		'uses' => 'InventoryController@display',
+		'as' => 'manageproduct.display'
+));
 
-});
+Route::post('/back_end/delete/{id}', array(
+		'uses' => 'InventoryController@destroy',
+		'as' => 'manageproduct.destroy'
+));
 
 Route::get('/back_end/manageProduct', array(
 		'uses' => 'InventoryController@displayInformation',
@@ -164,6 +171,7 @@ Route::post('/back_end/addproduct', function()
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,6 +181,8 @@ Route::post('/back_end/addproduct', function()
 >>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 
 >>>>>>> rocardho
+=======
+>>>>>>> d3r1ck
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');

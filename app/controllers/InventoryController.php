@@ -72,6 +72,7 @@ class InventoryController extends \BaseController {
 			    $newproduct->prodId = Input::get('prodId');
 			    $newproduct->pname = Input::get('pname');
 			    $newproduct->descr = Input::get('descr');
+			    $newproduct->category = Input::get('cat');
 			    $newproduct->location = Input::get('location');
 			    $newproduct->purl = Input::get('purl');
 			    $newproduct->price = Input::get('price');
@@ -106,10 +107,21 @@ class InventoryController extends \BaseController {
 		//query all information from the table
 
 		$results = DB::table('product')->get();
-		$list = DB::table('product')->lists('cname');
+		//$list = DB::table('categories')->get();
 
-		return View::make('/back_end/manageProduct')->with('results', $results)->
-		with('list', $list);
+		return View::make('/back_end/manageProduct')
+		->with('results', $results);
+
+	}
+
+	public function display(){
+		//query all information from the table
+
+		$list = DB::table('categories')->get();
+		//$list = DB::table('categories')->get();
+
+		return View::make('/back_end/addProduct')
+		->with('list', $list);
 
 	}
 
@@ -147,6 +159,10 @@ class InventoryController extends \BaseController {
 	public function destroy($id)
 	{
 		//
+		$data = DB::table('product')->get($id);
+		$data->delete();
+
+		return View::make('/back_end/manageProduct')->with('message','Row is deleted');
 	}
 
 

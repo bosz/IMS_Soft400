@@ -18,6 +18,7 @@ class CreateProductTable extends Migration {
 			$table->string('prodId');
 			$table->string('pname');
 			$table->string('descr');
+			$table->string('category');
 			$table->string('location');
 			$table->string('purl');
 			$table->string('price');

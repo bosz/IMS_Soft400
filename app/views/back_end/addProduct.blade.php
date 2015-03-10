@@ -106,7 +106,12 @@
                   <div id="location" class="col-sm-12">
                     <label for="category" class="category-label">Category</label>
                     <span class="text-danger">*</span><br />
-                    {{ Form::select('Category', $list) }}
+                    <select class="form-control" name="cat">
+                    <option value="Select category">Select category</optgroup>
+                      @foreach($list as $lists)
+                        <option value="{{$lists->cname}}">{{$lists->cname}}</option>
+                      @endforeach
+                  </select>
                   </div>
                 </div>
 
@@ -114,7 +119,7 @@
                   <div id="location" class="col-sm-12">
                     <label for="location" class="location-label">Location</label>
                     <span class="text-danger">*</span><br />
-                    <select class="form-control" name="location"><optgroup>
+                    <select class="form-control" name="location">
                               <option selected="selected">Select Location</option>
                               <option value="North West">North West</option>
                               <option value="Extreme North">Extreme North</option>
@@ -126,7 +131,7 @@
                               <option value="East">East</option>
                               <option value="West">West</option>
                               <option value="South">South</option>
-                            </optgroup></select>
+                            </select>
                   </div>
                 </div>
 
