@@ -1,7 +1,7 @@
 @extends('/back_end/blayout')
 
 @section('title')
-    <title>User Page - IMS_Soft400</title>
+    <title>User Page - Manage Catergory - IMS_Soft400</title>
 @stop          
 
 @section('content')
@@ -15,7 +15,7 @@
 			
 				
                    <li>
-                       <a class="active-menu"  href="{{URL::to('/back_end/user')}}"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
+                       <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
                    </li>
                     <li>
                        <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Inventory Management</b></a>
@@ -29,6 +29,7 @@
                        </ul>
                        </li>
                    </li>
+
                    <li>
                        <a  href="#"><i class="fa fa-qrcode fa-3x"></i><b> Category </b></a>
                        <ul style="list-style: none;">
@@ -39,8 +40,10 @@
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                        </ul>
+
                    </li>
-					   <li  >
+
+					        <li>
                        <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase </b></a>
                    </li>	
                      <li  >

@@ -119,3 +119,15 @@ Route::get('/back_end/manageProduct', function()
 	return View::make('/back_end/manageProduct');
 
 });
+
+//Routes to handle Catergory Module
+
+Route::get('/back_end/addCategory', function()
+{
+	return View::make('/back_end/addCategory');
+});
+
+Route::get('/back_end/manageCategory', function()
+{
+	return View::make('/back_end/manageCategory');
+});
