@@ -48,8 +48,10 @@
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                        </ul>
-                   </li>	
-                     <li  >
+                       </li>
+                   </li>
+                   </li>
+                    <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	
                </ul>

@@ -57,7 +57,7 @@ return array(
 			'host'      => '127.0.0.1',
 			'database'  => 'ims_soft400',
 			'username'  => 'root',
-			'password'  => 'kulachen',
+			'password'  => 'isidore123',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

@@ -35,8 +35,8 @@
                    <li>
                        <a  href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i><b> Sales </b></a>
                    </li>
-					   <li  >
-                       <a   href="#"><i class="fa fa-desktop fa-3x"></i><b> Purchase Management</b></a>
+					   <li>
+                      <a   href="#"><i class="fa fa-desktop fa-3x"></i><b> Purchase Management</b></a>
                         <ul style="list-style: none;">
                             <li>{{ HTML::link('/back_end/makePurchase', 'Make Purchase', 
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
@@ -47,7 +47,9 @@
                             <li>{{ HTML::link('/back_end/editCategories', 'Edit Categories', 
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
-                       </ul>
+                       </ul> 
+                       </li>
+                   </li>
                    </li>	
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>

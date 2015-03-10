@@ -16,6 +16,25 @@
 
 Route::get('/', function()
 {
+	/*Schema::create('Purchase', function($newTable){	
+            $newTable->string('customerName');
+            $newTable->string('customerEmail');
+            $newTable->string('productName');
+			$newTable->string('category');
+			$newTable->string('brand');
+			$newTable->string('modalNum');
+			$newTable->string('stock');
+			$newTable->string('price');
+			$newTable->integer('purchaseDate');
+			$newTable->integer('initialPaymentDate');
+			$newTable->integer('lastPaymentDate');
+			$newTable->string('BillingMethod');
+			$newTable->integer('TransactionCode');
+			$newTable->string('TransactionMessage');
+			$newTable->string('status');
+			$newTable->timestamps();
+		});*/ 
+
 	return View::make('index');
 });
 
@@ -106,6 +125,7 @@ Route::get('/register/signup_user', function()
 
 });
 
+
 //This is for backend routine
 
 Route::get('/back_end/inventoryList', function()
@@ -125,3 +145,59 @@ Route::get('/back_end/manageAttributes', function()
 	return View::make('/back_end/manageAttributes');
 
 });
+
+
+
+Route::get('/back_end/makePurchase', function()
+{
+	return View::make('/back_end/makePurchase');
+
+});
+
+Route::get('/back_end/addCategories', function()
+{
+	return View::make('/back_end/addCategories');
+
+});
+
+Route::get('/back_end/editCategories', function()
+{
+	return View::make('/back_end/editCategories');
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
