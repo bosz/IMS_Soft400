@@ -111,8 +111,12 @@
                                               {{ $result->quantity }}
                                             </td>
                                             <td><b>Active</b></td>
-                                            <td><button class="btn btn-warning">Edit</button></td>
-                                            <td><button class="btn btn-danger">Delete</button></td>
+                                            <td><a href="{{URL::to('#')}}">
+                                                <button class="btn btn-warning"><i class="fa fa-edit"></i></i> Edit</button></a></td>
+                                             <td>   
+                                                {{ Form::open(array('method' => 'post', 'url' => array('manageproduct.destroy', $result->id))) }}                       
+                                                {{ Form::submit('Delete', array('class'=> 'btn btn-danger')) }}
+                                                {{ Form::close() }}
                                           </tr>
                                         @endforeach
 

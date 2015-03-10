@@ -14,10 +14,6 @@
 
 Route::get('/', function()
 {
-<<<<<<< HEAD
-=======
-
->>>>>>> rocardho
 	return View::make('index');
 });
 
@@ -118,6 +114,11 @@ Route::get('/back_end/addProduct', array(
 		'as' => 'manageproduct.display'
 ));
 
+Route::post('/back_end/delete/{id}', array(
+		'uses' => 'InventoryController@destroy',
+		'as' => 'manageproduct.destroy'
+));
+
 Route::get('/back_end/manageProduct', array(
 		'uses' => 'InventoryController@displayInformation',
 		'as' => 'manageproduct.displayInformation'
@@ -152,10 +153,6 @@ Route::post('/back_end/addproduct', function()
         return $addproduct->store();
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> rocardho
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');

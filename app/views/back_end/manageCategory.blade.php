@@ -85,8 +85,8 @@
                                         <tr>
                                             <th>Category Name</th>
                                             <th align="right">Description</th>
-                                            <th align="center">Edit</th>
-                                            <th align="center">Delete</th>
+                                            <th><center>Edit</center></th>
+                                            <th><center>Delete</center></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -99,16 +99,18 @@
                                             {{ $result->description }}
                                             </td>
                                             <td>
-                                                <a href="{{URL::to('/back_end/editCategory')}}" class="btn btn-warning"><i class="fa fa-edit "></i>Edit</a>
+                                                <center><a href="{{URL::to('/back_end/editCategory')}}" class="btn btn-warning">
+                                                <i class="fa fa-edit "></i>Edit</a></center>
                                             </td>
                                             <td>
-                                                <a href="#" class="btn btn-danger" onclick='return confirm("Are you sure you want to delete?")'><i class="fa fa-trash-o"></i></i> Delete</a>
+                                                <center><a href="#" class="btn btn-danger" onclick='return confirm("Are you sure you want to delete?")'>
+                                                <i class="fa fa-trash-o"></i></i> Delete</a></center>
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
-                                {{HTML::link('/back_end/addCategory', 'Add More', 
+                                {{HTML::link('/back_end/addCategory', 'Add More Categories', 
                                 array('class' => 'btn btn-primary', 'style' => 'float: right;'))}}
                             </div>
                             
