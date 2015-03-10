@@ -54,7 +54,7 @@ class CategoryController extends \BaseController {
 			    $newcategory->save();
 			 
 			    return Redirect::to('/back_end/manageCategory')->with('success', true)
-                    		->with('message','New category has been add successfully');
+                    		->with('message','New category has been added successfully');
 			}
 	}
 

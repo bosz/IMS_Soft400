@@ -61,7 +61,24 @@
           </div> 
              <div class="panel panel-default">
                         <div class="panel-body">
+
                             <div class="table-responsive">
+                             @if ($errors->any())
+                       
+                      <ul style="color:red;">
+                       
+                        {{ implode('', $errors->all('<li>:message</li>')) }}
+                       
+                      </ul>
+                       
+                        @endif
+
+                        @if(Session::has('success'))
+                          <div class="alert alert-success">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          <strong></strong> {{ Session::get('message', '') }}
+                          </div>
+                      @endif
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
@@ -98,12 +115,14 @@
                                             <td><button class="btn btn-danger">Delete</button></td>
                                           </tr>
                                         @endforeach
+
                                   </tbody>  
                                 </table>
+                                {{HTML::link('/back_end/addProduct', 'Add Another Product', 
+                                array('class' => 'btn btn-primary', 'style' => 'float: right;'))}}
                             </div>
                             
                         </div>
                     </div>
-
        </div>
 @stop
