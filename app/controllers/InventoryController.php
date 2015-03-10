@@ -98,6 +98,19 @@ class InventoryController extends \BaseController {
 		//
 	}
 
+	/*
+	function to query and return information in the product tabel
+	*/
+
+	public function displayInformation(){
+		//query all information from the table
+
+		$results = DB::table('product')->get();
+
+		return View::make('/back_end/manageProduct')->with('results', $results);
+
+	}
+
 
 	/**
 	 * Show the form for editing the specified resource.
