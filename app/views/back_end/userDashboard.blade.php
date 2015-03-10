@@ -69,8 +69,7 @@
                     </b></p>
                 </li>
                 <li>
-                  <p>Phone Number:  <b>
-                                    Fix Needed
+                  <p>Phone Number:  <b> Fix Needed
                   </b></p>
                 </li>
               </ul>
@@ -87,7 +86,9 @@
                   <p>Last Login at: Fix Needed</p>
                 </li>
                 <li>
-                  <p>Contact(Phone Number): Fix Needed</p>
+                  <p>Number of Customers: <b> <?php
+                  $val = DB:: table( 'created_users' ) -> count();
+                  echo $val ?></b></p>
                 </li>
                 <li>
                   <p>Descripion: <i><b>You are a verified user of the system</b></i></p>
