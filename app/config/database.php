@@ -58,10 +58,16 @@ return array(
 			'database'  => 'ims_soft400',
 			'username'  => 'root',
 <<<<<<< HEAD
-			'password'  => 'isidore123',
+			'password'  => 'kulachen',
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 			'password'  => 'kulachen',
+=======
+			'password'  => 'root',
+			'password'  => 'toor',
+>>>>>>> rocardho
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 =======
 			'password'  => 'root',
 			'password'  => 'toor',

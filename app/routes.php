@@ -15,9 +15,15 @@
 Route::get('/', function()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 <<<<<<< HEAD
+=======
+
+>>>>>>> rocardho
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+=======
 =======
 
 >>>>>>> rocardho
@@ -160,6 +166,9 @@ Route::post('/back_end/addproduct', function()
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 =======
 >>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 
@@ -184,6 +193,9 @@ Route::get('/back_end/editCategories', function()
 
 });
 
+<<<<<<< HEAD
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+=======
 >>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 Route::post('/back_end/addcategory', function()
 {
