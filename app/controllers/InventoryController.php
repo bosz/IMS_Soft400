@@ -106,8 +106,10 @@ class InventoryController extends \BaseController {
 		//query all information from the table
 
 		$results = DB::table('product')->get();
+		$list = DB::table('product')->lists('cname');
 
-		return View::make('/back_end/manageProduct')->with('results', $results);
+		return View::make('/back_end/manageProduct')->with('results', $results)->
+		with('list', $list);
 
 	}
 

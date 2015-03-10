@@ -12,16 +12,21 @@
 */
 
 
-
-
 Route::get('/', function()
 {
+<<<<<<< HEAD
 	
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> rocardho
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 	return View::make('index');
 });
 
 Route::get('/layout', function(){
-	return View::make('layout');
+	return View::make('/layout');
 });
 
 Route::get('/register/signup', function()
@@ -92,9 +97,6 @@ Route::post('password/reset/{token}', array(
   'as' => 'password.update'
 ));
 
-
-
-
 /*=============================================================*/
 /* 			This is the second later of the App(system) which is
 /* 			signing up the user to the grand database          */
@@ -133,10 +135,16 @@ Route::get('/back_end/addCategory', function()
 	return View::make('/back_end/addCategory');
 });
 
-Route::get('/back_end/manageCategory', function()
+Route::get('/back_end/manageCategory', array(
+		'uses' => 'CategoryController@displayCategory',
+		'as' => 'managecategory.displayCategory'
+));
+
+/*Route::get('/back_end/manageCategory', function()
 {
 	return View::make('/back_end/manageCategory');
 });
+*/
 
 Route::get('/back_end/editCategory', function()
 {
@@ -149,7 +157,13 @@ Route::post('/back_end/addproduct', function()
         return $addproduct->store();
 });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 
+>>>>>>> rocardho
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');
@@ -162,6 +176,15 @@ Route::get('/back_end/purchaseManagement', function()
 
 });
 
+<<<<<<< HEAD
+=======
+Route::get('/back_end/editCategories', function()
+{
+	return View::make('/back_end/editCategories');
+
+});
+
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 Route::post('/back_end/addcategory', function()
 {
         $addcategory = new CategoryController();

@@ -57,7 +57,16 @@ return array(
 			'host'      => '127.0.0.1',
 			'database'  => 'ims_soft400',
 			'username'  => 'root',
+<<<<<<< HEAD
 			'password'  => 'isidore123',
+=======
+<<<<<<< HEAD
+			'password'  => 'kulachen',
+=======
+			'password'  => 'root',
+			'password'  => 'toor',
+>>>>>>> rocardho
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

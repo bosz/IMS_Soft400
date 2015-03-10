@@ -111,7 +111,6 @@
                           </div>
                           <div class="col-lg-4 text-right"><br />
                             {{ Form::submit('Update Category', array('class' => 'btn btn-success')) }}
-                            <button type="button" class="btn btn-info">Info Button</button>
 
                           </div>
                         </div>
