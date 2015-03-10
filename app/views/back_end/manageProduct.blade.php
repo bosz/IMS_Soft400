@@ -45,6 +45,11 @@
        </nav>  
        <!-- /. NAV SIDE  -->
        <div id="page-wrapper" >
-           
+          <div>
+            <center><p style="font-size: 20px;"><b>Manage Products in Inventory</b></p></center>
+          </div> 
+
+          <p>A table for viewing products here</p>
+
        </div>
 @stop

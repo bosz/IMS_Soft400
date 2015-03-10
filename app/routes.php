@@ -119,3 +119,9 @@ Route::get('/back_end/manageProduct', function()
 	return View::make('/back_end/manageProduct');
 
 });
+
+Route::post('/back_end/addproduct', function()
+{
+        $addproduct = new InventoryController();
+        return $addproduct->store();
+});
