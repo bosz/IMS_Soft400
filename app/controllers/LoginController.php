@@ -49,7 +49,7 @@ class LoginController extends BaseController {
 				$lname = DB::select("SELECT lname FROM created_users WHERE email = '$email'");
 				$email = DB::select("SELECT email FROM created_users WHERE email = '$email'");
 
-				return View::make('/back_end/user')->with('success', true)->
+				return View::make('/back_end/userDashboard')->with('success', true)->
 				with('email', $email)->with('fname', $fname)->with('lname', $lname);
 				//return Redirect::to('user');
 				echo 'SUCCESS!';
@@ -61,6 +61,17 @@ class LoginController extends BaseController {
 			}
 		}
 		
+	}
+
+	public function dashboard(){	
+
+				$email = Input::get('email');
+				$fname = DB::select("SELECT fname FROM created_users WHERE email = '$email'");
+				$lname = DB::select("SELECT lname FROM created_users WHERE email = '$email'");
+				$email = DB::select("SELECT email FROM created_users WHERE email = '$email'");
+
+				return View::make('/back_end/userDashboard')->with('email', $email)
+				->with('success', true)->with('fname', $fname)->with('lname', $lname);
 	}
 
 	public function doLogout(){

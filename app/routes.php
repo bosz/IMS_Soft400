@@ -52,16 +52,21 @@ Route::get('/register/signup', function()
 Route::get('/login/login', array('uses' => 'LoginController@showLogin'));
 
 //route to process the form
-Route::post('/back_end/user', array('uses' => 'LoginController@doLogin'));
+Route::post('/back_end/userDashboard', array('uses' => 'LoginController@doLogin'));
 
 //route to logout the user
 Route::get('logout', array('uses' => 'LoginController@doLogout'));
 
-Route::get('/back_end/user', function()
+/*Route::get('/back_end/userDashboard', function()
 {
-	return View::make('/back_end/user');
+	return View::make('/back_end/userDashboard');
 
-});
+});*/
+
+Route::get('/back_end/userDashboard', array(
+		'uses' => 'LoginController@dashboard',
+		'as' => 'dasboard.dashboard'
+));
 
 Route::get('/password/remind', function()
 {
@@ -128,22 +133,41 @@ Route::get('/register/signup_user', function()
 
 //This is for backend routine
 
-Route::get('/back_end/inventoryList', function()
+Route::get('/back_end/addProduct', function()
 {
-	return View::make('/back_end/inventoryList');
+	return View::make('/back_end/addProduct');
 
 });
 
-Route::get('/back_end/manageCategories', function()
-{
-	return View::make('/back_end/manageCategories');
+Route::get('/back_end/manageProduct', array(
+		'uses' => 'InventoryController@displayInformation',
+		'as' => 'manageproduct.displayInformation'
+));
 
+//Routes to handle Catergory Module
+
+Route::get('/back_end/addCategory', function()
+{
+	return View::make('/back_end/addCategory');
 });
 
-Route::get('/back_end/manageAttributes', function()
+Route::get('/back_end/manageCategory', function()
 {
-	return View::make('/back_end/manageAttributes');
+	return View::make('/back_end/manageCategory');
+});
 
+Route::get('/back_end/editCategory', function()
+{
+	return View::make('/back_end/editCategory');
+});
+
+Route::post('/back_end/addproduct', function()
+{
+        $addproduct = new InventoryController();
+        return $addproduct->store();
+});
+
+<<<<<<< HEAD
 });
 
 
@@ -201,3 +225,10 @@ Route::get('/back_end/editCategories', function()
 
 
 
+=======
+Route::post('/back_end/addcategory', function()
+{
+        $addcategory = new CategoryController();
+        return $addcategory->store();
+});
+>>>>>>> c1ac8bc3f3ad1ff098607fc2865d0b95289ae75d
