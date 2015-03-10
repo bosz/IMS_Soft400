@@ -41,9 +41,8 @@
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                        </ul>
                    </li>
-<<<<<<< HEAD:app/views/back_end/user.blade.php
 					         <li>
-                   <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Purchase Management</b></a>
+                   <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Purchase/Order</b></a>
                         <ul style="list-style: none;">
                             <li>{{ HTML::link('/back_end/makePurchase', 'Make Purchase', 
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
@@ -56,12 +55,7 @@
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                         </ul>
 
-                    </li>
-=======
-					   <li  >
-                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
->>>>>>> c1ac8bc3f3ad1ff098607fc2865d0b95289ae75d:app/views/back_end/userDashboard.blade.php
-                   </li>	
+                    </li>	
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	
