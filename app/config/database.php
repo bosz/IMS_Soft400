@@ -57,7 +57,7 @@ return array(
 			'host'      => '127.0.0.1',
 			'database'  => 'ims_soft400',
 			'username'  => 'root',
-			'password'  => 'toor',
+			'password'  => 'kulachen',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
