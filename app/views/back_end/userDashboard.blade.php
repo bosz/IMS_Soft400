@@ -103,9 +103,24 @@
               </ul>
            </div>
            <hr />
+
+           <!-- for image display -->
            <div id="dashboard">
              
+              <center><p><b><u>PRODUCT ANALYSIS OF INVENTORY MANAGEMENT SYSTEM</u></b></p></center>
+              <hr />
+              <ul>
+               <div class="panel-body">
+                            <div id="morris-bar-chart"></div>
+                </div>
+              </ul>
+          
+          
+           <hr />
            </div>
 
        </div>
+       <!-- for images -->
+
+
 @stop
