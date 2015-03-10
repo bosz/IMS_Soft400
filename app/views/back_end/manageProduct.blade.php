@@ -58,8 +58,28 @@
           <div>
             <center><p style="font-size: 20px;"><b>Manage Products in Inventory</b></p></center>
           </div> 
-
-          <p>A table for viewing products here</p>
+             <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Name</th>
+                                            <th>Product URL</th>
+                                            <th>Stock Quantity</th>
+                                            <th>ReOrder Level</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
 
        </div>
 @stop
