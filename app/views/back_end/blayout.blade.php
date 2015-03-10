@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    @yield('title');
+    @yield('title')
 
     <!-- Custom styles for our template -->
   <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.css') }}" media="screen" >
@@ -36,10 +36,16 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;">{{ HTML::link('/logout', 'Logout', array('class' => 'btn btn-info'))}} </div>
+font-size: 16px;">
+@if(Auth::check())
+    Welcome, <b style="font-size: 20px;">{{ Auth::user()->email }}!</b> &nbsp;&nbsp;&nbsp;
+      {{ HTML::link('/logout', 'Logout', array('class' => 'btn btn-info'))}}
+@else
+{{ HTML::link('/login/login', 'LogIn', array('class' => 'btn btn-info'))}} </div>
+@endif
         </nav> 
 
-        @yield('content');
+        @yield('content')
 
         <footer id="footer" class="top-space">
 

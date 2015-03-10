@@ -33,14 +33,14 @@ Route::get('/register/signup', function()
 Route::get('/login/login', array('uses' => 'LoginController@showLogin'));
 
 //route to process the form
-Route::post('/back_end/user', array('uses' => 'LoginController@doLogin'));
+Route::post('/back_end/userDashboard', array('uses' => 'LoginController@doLogin'));
 
 //route to logout the user
 Route::get('logout', array('uses' => 'LoginController@doLogout'));
 
-Route::get('/back_end/user', function()
+Route::get('/back_end/userDashboard', function()
 {
-	return View::make('/back_end/user');
+	return View::make('/back_end/userDashboard');
 
 });
 
@@ -103,5 +103,19 @@ Route::post('/register_user', function()
 Route::get('/register/signup_user', function()
 {
 	return View::make('register/signup_user');
+
+});
+
+//This is for backend routine
+
+Route::get('/back_end/addProduct', function()
+{
+	return View::make('/back_end/addProduct');
+
+});
+
+Route::get('/back_end/manageProduct', function()
+{
+	return View::make('/back_end/manageProduct');
 
 });

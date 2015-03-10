@@ -44,8 +44,13 @@ class LoginController extends BaseController {
 
 				//validation successful!
 				$email = Input::get('email');
-				return View::make('/back_end/user')->with('success', true)->
-				with('email', $email);
+
+				$fname = DB::select("SELECT fname FROM created_users WHERE email = '$email'");
+				$lname = DB::select("SELECT lname FROM created_users WHERE email = '$email'");
+				$email = DB::select("SELECT email FROM created_users WHERE email = '$email'");
+
+				return View::make('/back_end/userDashboard')->with('success', true)->
+				with('email', $email)->with('fname', $fname)->with('lname', $lname);
 				//return Redirect::to('user');
 				echo 'SUCCESS!';
 			}
