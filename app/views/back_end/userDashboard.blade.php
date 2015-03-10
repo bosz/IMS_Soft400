@@ -55,7 +55,14 @@
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                         </ul>
 
+<<<<<<< HEAD
                     </li>	
+=======
+                    </li>
+					   <li  >
+                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
+                   </li>	
+>>>>>>> rocardho
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	
