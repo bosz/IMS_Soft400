@@ -120,6 +120,7 @@ Route::get('/back_end/manageProduct', function()
 
 });
 
+<<<<<<< HEAD
 //Routes to handle Catergory Module
 
 Route::get('/back_end/addCategory', function()
@@ -130,4 +131,10 @@ Route::get('/back_end/addCategory', function()
 Route::get('/back_end/manageCategory', function()
 {
 	return View::make('/back_end/manageCategory');
+=======
+Route::post('/back_end/addproduct', function()
+{
+        $addproduct = new InventoryController();
+        return $addproduct->store();
+>>>>>>> d3r1ck
 });

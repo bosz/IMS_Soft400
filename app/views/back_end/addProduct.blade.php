@@ -57,6 +57,7 @@
        <div>
          <center><p style="font-size: 20px;"><b>Add New Product</b></p></center>
        </div>
+          <div id="formDiv">
             @if ($errors->any())
                
               <ul style="color:red;">
@@ -70,12 +71,12 @@
               @if(Session::has('success'))
                   <div class="alert alert-success">
                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                  <strong>Complete your Registration!</strong> {{ Session::get('message', '') }}
+                  <strong></strong> {{ Session::get('message', '') }}
                   </div>
               @endif
 
-              <div id="formDiv">
-              {{ Form::open(array('url' => '#', 'method' => 'post')) }}
+           
+              {{ Form::open(array('url' => '/back_end/addproduct', 'method' => 'post')) }}
                 <div class="top-margin">
                   <label>Product ID <span class="text-danger">*</span></label>
                   {{ Form::text('prodId', Input::old('prodId'), array('placeholder'=>'Serial Number',
@@ -108,9 +109,9 @@
                   <div id="location" class="col-sm-12">
                     <label for="location" class="location-label">Location</label>
                     <span class="text-danger">*</span><br />
-                    <select class="form-control" name="country"><optgroup>
+                    <select class="form-control" name="location"><optgroup>
                               <option selected="selected">Select Location</option>
-                              <option value="North">North West</option>
+                              <option value="North West">North West</option>
                               <option value="Extreme North">Extreme North</option>
                               <option value="Adamawa">Adamawa</option>
                               <option value="North">North</option>
@@ -138,7 +139,7 @@
                   </div>
                   <div class="col-sm-6">
                     <label>Purchase VAT%<span class="text-danger">*</span></label>
-                    {{ Form::text('purvat', Input::old('purvat'), array('placeholder'=>'Purchase Value Added Tax',
+                    {{ Form::text('pvat', Input::old('purvat'), array('placeholder'=>'Purchase Value Added Tax',
                    'class' => 'form-control')) }}
                   </div>
                 </div>
@@ -150,7 +151,7 @@
                   </div>
                   <div class="col-sm-6">
                     <label>Sales VAT%<span class="text-danger">*</span></label>
-                    {{ Form::text('salesvat', Input::old('salesvat'), array('placeholder'=>'Sales Value Added Tax',
+                    {{ Form::text('svat', Input::old('salesvat'), array('placeholder'=>'Sales Value Added Tax',
                    'class' => 'form-control')) }}
                   </div>
                 </div>
