@@ -1,7 +1,7 @@
 @extends('/back_end/blayout')
 
 @section('title')
-    <title>User Page - Manage Catergory - IMS_Soft400</title>
+    <title>User Page - Edit Catergory - IMS_Soft400</title>
 @stop          
 
 @section('content')
@@ -56,60 +56,65 @@
        </nav>  
        <!-- /. NAV SIDE  -->
        <div id="page-wrapper" >
+        <div>
+         <center><p style="font-size: 20px;"><b>Edit Category</b></p></center>
+        </div>
 
-          @if ($errors->any())
-               
-              <ul style="color:red;">
-               
-              {{ implode('', $errors->all('<li>:message</li>')) }}
-               
-              </ul>
-               
-              @endif
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                    Edit Category
+                </div>
+                  <div class="panel-body">
+                    <div class="table-responsive">
+                      @if ($errors->any())
+                       
+                      <ul style="color:red;">
+                       
+                        {{ implode('', $errors->all('<li>:message</li>')) }}
+                       
+                      </ul>
+                       
+                        @endif
 
-              @if(Session::has('success'))
-                  <div class="alert alert-success">
-                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                  <strong></strong> {{ Session::get('message', '') }}
-                  </div>
-              @endif
-           <!-- Advanced Tables -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading"><i class="fa fa-cog"></i>
-                             Category Listing
+                        @if(Session::has('success'))
+                          <div class="alert alert-success">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          <strong>Complete your Registration!</strong> {{ Session::get('message', '') }}
+                          </div>
+                      @endif
+
+                      <div id="formDiv">
+                      {{ Form::open(array('url' => '/back_end/addcategory', 'method' => 'post')) }}
+                        <div class="top-margin">
+                          <label>Category Name<span class="text-danger">*</span></label>
+                          {{ Form::text('cname', Input::old('cname'), array('placeholder'=>'Enter Category Name',
+                           'class' => 'form-control')) }}
                         </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                    <thead>
-                                        <tr>
-                                            <th>Category Name</th>
-                                            <th align="right">Description</th>
-                                            <th align="center">Edit</th>
-                                            <th align="center">Delete</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="odd gradeX">
-                                            <td>
 
-                                            </td>
-                                            <td>
-                                            
-                                            </td>
-                                            <td>
-                                                <a href="{{URL::to('/back_end/editCategory')}}" class="btn btn-warning"><i class="fa fa-edit "></i>Edit</a>
-                                            </td>
-                                            <td>
-                                                <a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i></i> Delete</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
+                        <div class="top-margin">
+                          <label>Category Description:<span class="text-danger">*</span></label>
+                          {{ Form::textarea('description', Input::old('cname'), array('placeholder'=>'Enter Category Name',
+                           'class' => 'form-control')) }}
                         </div>
+
+                        <div class="row">
+                        <div class="col-lg-8">
+                          <br />                       
+                          </div>
+                          <div class="col-lg-4 text-right"><br />
+                            {{ Form::submit('Update Category', array('class' => 'btn btn-success')) }}
+                            <button type="button" class="btn btn-info">Info Button</button>
+
+                          </div>
+                        </div>
+                      {{ Form::close() }}
                     </div>
-                    <!--End Advanced Tables -->
+
+                </div>
+                            
+            </div>
+          </div>
+
+           
        </div>
 @stop
