@@ -98,10 +98,7 @@
                   <div id="location" class="col-sm-12">
                     <label for="category" class="category-label">Category</label>
                     <span class="text-danger">*</span><br />
-                    <select class="form-control" name="country"><optgroup>
-                          <option selected="selected">Select Category</option>
-                          <option value="Default">Default</option>
-                        </optgroup></select>
+                    {{ Form::select('Category', $list) }}
                   </div>
                 </div>
 
