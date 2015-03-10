@@ -383,6 +383,12 @@ line-height: 1.428571429;
     padding-bottom: -400px;
 }
 
+#formDiv {
+    position: relative;
+    width: 83%;
+    padding-left: 155px;
+}
+
 /*==============================================
     MEDIA QUERIES     
     =============================================*/

@@ -45,6 +45,129 @@
        </nav>  
        <!-- /. NAV SIDE  -->
        <div id="page-wrapper" >
-           
+
+       <div>
+         <center><p style="font-size: 20px;"><b>Add New Product</b></p></center>
+       </div>
+            @if ($errors->any())
+               
+              <ul style="color:red;">
+               
+              {{ implode('', $errors->all('<li>:message</li>')) }}
+               
+              </ul>
+               
+              @endif
+
+              @if(Session::has('success'))
+                  <div class="alert alert-success">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Complete your Registration!</strong> {{ Session::get('message', '') }}
+                  </div>
+              @endif
+
+              <div id="formDiv">
+              {{ Form::open(array('url' => '#', 'method' => 'post')) }}
+                <div class="top-margin">
+                  <label>Product ID <span class="text-danger">*</span></label>
+                  {{ Form::text('prodId', Input::old('prodId'), array('placeholder'=>'Serial Number',
+                   'class' => 'form-control')) }}
+                </div>
+
+                <div class="top-margin">
+                  <label>Product Name<span class="text-danger">*</span></label>
+                  {{ Form::text('pname', Input::old('pname'), array('placeholder'=>'Product Name',
+                   'class' => 'form-control')) }}
+                </div>
+                <div class="top-margin">
+                  <label>Product Description<span class="text-danger">*</span></label>
+                  {{ Form::text('descr', Input::old('descr'), array('placeholder'=>'Brief Description of Product',
+                   'class' => 'form-control')) }}
+                </div>
+
+                <div class="row top-margin">
+                  <div id="location" class="col-sm-12">
+                    <label for="category" class="category-label">Category</label>
+                    <span class="text-danger">*</span><br />
+                    <select class="form-control" name="country"><optgroup>
+                          <option selected="selected">Select Category</option>
+                          <option value="Default">Default</option>
+                        </optgroup></select>
+                  </div>
+                </div>
+
+                <div class="row top-margin">
+                  <div id="location" class="col-sm-12">
+                    <label for="location" class="location-label">Location</label>
+                    <span class="text-danger">*</span><br />
+                    <select class="form-control" name="country"><optgroup>
+                              <option selected="selected">Select Location</option>
+                              <option value="North">North West</option>
+                              <option value="Extreme North">Extreme North</option>
+                              <option value="Adamawa">Adamawa</option>
+                              <option value="North">North</option>
+                              <option value="South West">South West</option>
+                              <option value="Litoral">Litoral</option>
+                              <option value="Centre">Centre</option>
+                              <option value="East">East</option>
+                              <option value="West">West</option>
+                              <option value="South">South</option>
+                            </optgroup></select>
+                  </div>
+                </div>
+
+                <div class="top-margin">
+                  <label>Product URL</label>
+                  {{ Form::text('purl', Input::old('purl'), array('placeholder'=>'Enter Product URL to view product',
+                   'class' => 'form-control')) }}
+                </div>
+
+                <div class="row top-margin">
+                  <div class="col-sm-6">
+                    <label>Purchase Price <span class="text-danger">*</span></label>
+                    {{ Form::text('price', Input::old('price'), array('placeholder'=>'Purchase Price',
+                   'class' => 'form-control')) }}
+                  </div>
+                  <div class="col-sm-6">
+                    <label>Purchase VAT%<span class="text-danger">*</span></label>
+                    {{ Form::text('purvat', Input::old('purvat'), array('placeholder'=>'Purchase Value Added Tax',
+                   'class' => 'form-control')) }}
+                  </div>
+                </div>
+                <div class="row top-margin">
+                  <div class="col-sm-6">
+                    <label>Sales Price<span class="text-danger">*</span></label>
+                    {{ Form::text('sales', Input::old('sales'), array('placeholder'=>'Sales Price',
+                   'class' => 'form-control')) }}
+                  </div>
+                  <div class="col-sm-6">
+                    <label>Sales VAT%<span class="text-danger">*</span></label>
+                    {{ Form::text('salesvat', Input::old('salesvat'), array('placeholder'=>'Sales Value Added Tax',
+                   'class' => 'form-control')) }}
+                  </div>
+                </div>
+                <div class="row top-margin">
+                  <div class="col-sm-6">
+                    <label>Stock Quantity<span class="text-danger">*</span></label>
+                    {{ Form::text('quantity', Input::old('prodId'), array('placeholder'=>'Stock Quantity',
+                   'class' => 'form-control')) }}
+                  </div>
+                  <div class="col-sm-6">
+                    <label>Stock Warning Level<span class="text-danger">*</span></label>
+                    {{ Form::text('swarn', Input::old('prodId'), array('placeholder'=>'Minimum Reorder Level',
+                   'class' => 'form-control')) }}
+                  </div>
+                </div>
+
+                <div class="row">
+                <div class="col-lg-8">
+                  <br />                       
+                  </div>
+                  <div class="col-lg-4 text-right"><br />
+                    {{ Form::submit('Add Product', array('class' => 'btn btn-primary')) }}
+                  </div>
+                </div>
+              {{ Form::close() }}
+            </div>
        </div>
 @stop
