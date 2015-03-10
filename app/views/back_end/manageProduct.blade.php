@@ -18,7 +18,7 @@
                        <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
                    </li>
                     <li>
-                       <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Inventory Management</b></a>
+                       <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Inventory</b></a>
                        <ul style="list-style: none;">
                             <li>{{ HTML::link('/back_end/addProduct', 'Add Product', 
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
@@ -33,7 +33,7 @@
                        <a  href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i><b> Category </b></a>
                    </li>
 					   <li  >
-                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase </b></a>
+                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
                    </li>	
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
