@@ -1,7 +1,7 @@
 @extends('/back_end/blayout')
 
 @section('title')
-    <title>User Page - Add Catergory - IMS_Soft400</title>
+    <title>User Page - Edit Catergory - IMS_Soft400</title>
 @stop          
 
 @section('content')
@@ -57,12 +57,12 @@
        <!-- /. NAV SIDE  -->
        <div id="page-wrapper" >
         <div>
-         <center><p style="font-size: 20px;"><b>Add New Category</b></p></center>
+         <center><p style="font-size: 20px;"><b>Edit Category</b></p></center>
         </div>
 
           <div class="panel panel-default">
-            <div class="panel-heading"><i class="fa fa-cog"></i>
-                    Add Category
+            <div class="panel-heading">
+                    Edit Category
                 </div>
                   <div class="panel-body">
                     <div class="table-responsive">
@@ -102,7 +102,9 @@
                           <br />                       
                           </div>
                           <div class="col-lg-4 text-right"><br />
-                            {{ Form::submit('Add Category', array('class' => 'btn btn-primary')) }}
+                            {{ Form::submit('Update Category', array('class' => 'btn btn-success')) }}
+                            <button type="button" class="btn btn-info">Info Button</button>
+
                           </div>
                         </div>
                       {{ Form::close() }}

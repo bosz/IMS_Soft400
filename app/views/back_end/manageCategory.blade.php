@@ -15,7 +15,7 @@
 			
 				
                    <li>
-                       <a class="active-menu"  href="index.html"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
+                       <a class="active-menu"  href="{{URL::to('/back_end/userDashboard')}}"><i class="fa fa-dashboard fa-3x"></i> <b>Dashboard</b></a>
                    </li>
                     <li>
                        <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Inventory Management</b></a>
@@ -75,7 +75,7 @@
               @endif
            <!-- Advanced Tables -->
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel-heading"><i class="fa fa-cog"></i>
                              Category Listing
                         </div>
                         <div class="panel-body">
@@ -85,24 +85,24 @@
                                         <tr>
                                             <th>Category Name</th>
                                             <th align="right">Description</th>
-                                            <th align="center">Action</th>
+                                            <th align="center">Edit</th>
+                                            <th align="center">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="odd gradeX">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 4.0</td>
-                                            <td>Win 95+</td>
-                                        </tr>
-                                        <tr class="even gradeC">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 5.0</td>
-                                            <td>Win 95+</td>
-                                        </tr>
-                                        <tr class="odd gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 5.5</td>
-                                            <td>Win 95+</td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                            
+                                            </td>
+                                            <td>
+                                                <a href="{{URL::to('/back_end/editCategory')}}" class="btn btn-warning"><i class="fa fa-edit "></i>Edit</a>
+                                            </td>
+                                            <td>
+                                                <a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i></i> Delete</a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
