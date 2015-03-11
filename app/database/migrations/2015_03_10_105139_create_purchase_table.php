@@ -20,7 +20,6 @@ Schema::create('purchase', function(Blueprint $newTable){
             $newTable->string('tel_num');
             $newTable->string('prodId');
             $newTable->string('prodname');
-            $newTable->string('prodname');
             $newTable->string('stockunit');
             $newTable->string('status');
 			$newTable->string('category');
