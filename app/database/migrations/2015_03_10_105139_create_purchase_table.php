@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePurchase extends Migration {
+class CreatePurchaseTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,9 +12,9 @@ class CreatePurchase extends Migration {
 	 */
 	public function up()
 	{
-Schema::create('Purchase', function($newTable){	
+Schema::create('purchase', function(Blueprint $newTable){	
 
-			$newtable->increments('id');
+			$newTable->increments('id');
             $newTable->string('custname');
             $newTable->string('custemail');
             $newTable->string('tel_num');
@@ -38,9 +38,8 @@ Schema::create('Purchase', function($newTable){
 	 * @return void
 	 */
 	public function down()
-
 	{
-		schema::drop('purchase');
+		Schema::drop('purchase');
 	}
 
 }
