@@ -102,12 +102,14 @@
                                                 <a href="{{URL::to('/back_end/editCategory')}}" class="btn btn-warning"><i class="fa fa-edit "></i>Edit</a>
                                             </td>
                                             <td>
-                                                <a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i></i> Delete</a>
+                                                <a href="#" class="btn btn-danger" onclick='return confirm("Are you sure you want to delete?")'><i class="fa fa-trash-o"></i></i> Delete</a>
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
+                                {{HTML::link('/back_end/addCategory', 'Add More', 
+                                array('class' => 'btn btn-primary', 'style' => 'float: right;'))}}
                             </div>
                             
                         </div>

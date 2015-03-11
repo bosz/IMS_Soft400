@@ -116,7 +116,10 @@ class CategoryController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Category::find($id)->delete();
+		return Redirect::to('/back_end/manageCategory')->with('success', true)
+                    		->with('message','Category has been added successfully deleted');
+
 	}
 
 
