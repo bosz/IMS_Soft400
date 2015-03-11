@@ -59,6 +59,19 @@ class CategoryController extends \BaseController {
 	}
 
 
+	/*
+	function to query and return information in the Category tabel
+	*/
+
+	public function displayCategory(){
+		//query all information from the table
+
+		$results = DB::table('categories')->get();
+
+		return View::make('/back_end/manageCategory')->with('results', $results);
+
+	}
+
 	/**
 	 * Display the specified resource.
 	 *

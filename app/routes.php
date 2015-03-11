@@ -136,6 +136,11 @@ Route::get('/back_end/manageCategory', function()
 	return View::make('/back_end/manageCategory');
 });
 
+Route::get('/back_end/editCategory', function()
+{
+	return View::make('/back_end/editCategory');
+});
+
 Route::post('/back_end/addproduct', function()
 {
         $addproduct = new InventoryController();
