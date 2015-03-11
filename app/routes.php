@@ -141,3 +141,9 @@ Route::post('/back_end/addproduct', function()
         $addproduct = new InventoryController();
         return $addproduct->store();
 });
+
+Route::post('/back_end/addcategory', function()
+{
+        $addcategory = new CategoryController();
+        return $addcategory->store();
+});
