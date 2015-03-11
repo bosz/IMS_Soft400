@@ -56,6 +56,57 @@
        </nav>  
        <!-- /. NAV SIDE  -->
        <div id="page-wrapper" >
+        <div>
+         <center><p style="font-size: 20px;"><b>Add New Category</b></p></center>
+        </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                    Add Category
+                </div>
+                  <div class="panel-body">
+                    <div class="table-responsive">
+                      @if ($errors->any())
+                       
+                      <ul style="color:red;">
+                       
+                        {{ implode('', $errors->all('<li>:message</li>')) }}
+                       
+                      </ul>
+                       
+                        @endif
+
+                        @if(Session::has('success'))
+                          <div class="alert alert-success">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          <strong>Complete your Registration!</strong> {{ Session::get('message', '') }}
+                          </div>
+                      @endif
+
+                      <div id="formDiv">
+                      {{ Form::open(array('url' => '#', 'method' => 'post')) }}
+                        <div class="top-margin">
+                          <label>Category Name<span class="text-danger">*</span></label>
+                          {{ Form::text('cname', Input::old('cname'), array('placeholder'=>'Enter Category Name',
+                           'class' => 'form-control')) }}
+                        </div>
+
+                        <div class="row">
+                        <div class="col-lg-8">
+                          <br />                       
+                          </div>
+                          <div class="col-lg-4 text-right"><br />
+                            {{ Form::submit('Add Category', array('class' => 'btn btn-primary')) }}
+                          </div>
+                        </div>
+                      {{ Form::close() }}
+                    </div>
+
+                </div>
+                            
+            </div>
+          </div>
+
            
        </div>
 @stop

@@ -18,6 +18,7 @@
 	<!-- Custom styles for our template -->
 	<link rel="stylesheet" href="{{ asset('css/bootstrap-theme.css') }}" media="screen" >
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
+	<link rel="stylesheet" href="{{ asset('js/dataTables/dataTables.bootstrap.css') }}">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -153,5 +154,7 @@
 	<script src="{{ asset('js/headroom.min.js') }}"></script>
 	<script src="{{ asset('js/jQuery.headroom.min.js') }}"></script>
 	<script src="{{ asset('js/template.js') }}"></script>
+	<script src="{{ asset('js/dataTables/jquery.dataTables.js') }}"></script>
+	<script src="{{ asset('js/dataTables/dataTables.bootstrap.js') }}"></script>
 </body>
 </html>
