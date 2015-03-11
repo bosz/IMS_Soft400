@@ -52,26 +52,10 @@
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                         </ul>
                     </li>	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+
                     </li>	
-=======
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
                     </li>
-					   <li  >
-                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
-                   </li>	
->>>>>>> rocardho
-<<<<<<< HEAD
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
                     </li>	
->>>>>>> d3r1ck
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	

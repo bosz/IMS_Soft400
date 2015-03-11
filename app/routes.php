@@ -14,23 +14,6 @@
 
 Route::get('/', function()
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> rocardho
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
-=======
-
->>>>>>> rocardho
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> d3r1ck
 	return View::make('index');
 });
 
@@ -170,19 +153,7 @@ Route::post('/back_end/addproduct', function()
         return $addproduct->store();
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
 
->>>>>>> rocardho
-=======
->>>>>>> d3r1ck
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');
@@ -195,18 +166,14 @@ Route::get('/back_end/purchaseManagement', function()
 
 });
 
-<<<<<<< HEAD
-=======
+
 Route::get('/back_end/editCategories', function()
 {
 	return View::make('/back_end/editCategories');
 
 });
 
-<<<<<<< HEAD
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+
 Route::post('/back_end/addcategory', function()
 {
         $addcategory = new CategoryController();

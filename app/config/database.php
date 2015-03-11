@@ -58,23 +58,6 @@ return array(
 			'database'  => 'ims_soft400',
 			'username'  => 'root',
 			'password'  => 'kulachen',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-			'password'  => 'kulachen',
-=======
-			'password'  => 'root',
-			'password'  => 'toor',
->>>>>>> rocardho
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
-			'password'  => 'root',
-			'password'  => 'toor',
->>>>>>> rocardho
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> d3r1ck
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
