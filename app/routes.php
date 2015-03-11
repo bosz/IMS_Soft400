@@ -14,6 +14,26 @@
 
 Route::get('/', function()
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+	
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> rocardho
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+=======
+=======
+
+>>>>>>> rocardho
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+=======
+>>>>>>> d3r1ck
+>>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
 	return View::make('index');
 });
 
@@ -113,6 +133,14 @@ Route::get('/back_end/addProduct', array(
 		'uses' => 'InventoryController@display',
 		'as' => 'manageproduct.display'
 ));
+<<<<<<< HEAD
+=======
+
+Route::post('/back_end/delete/{id}', array(
+		'uses' => 'InventoryController@destroy',
+		'as' => 'manageproduct.destroy'
+));
+>>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
 
 Route::get('/back_end/manageProduct', array(
 		'uses' => 'InventoryController@displayInformation',
@@ -148,6 +176,22 @@ Route::post('/back_end/addproduct', function()
         return $addproduct->store();
 });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+=======
+>>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
+
+>>>>>>> rocardho
+=======
+>>>>>>> d3r1ck
+>>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');

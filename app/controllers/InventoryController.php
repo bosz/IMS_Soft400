@@ -159,6 +159,10 @@ class InventoryController extends \BaseController {
 	public function destroy($id)
 	{
 		//
+		$data = DB::table('product')->get($id);
+		$data->delete();
+
+		return View::make('/back_end/manageProduct')->with('message','Row is deleted');
 	}
 
 
