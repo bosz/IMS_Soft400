@@ -82,7 +82,7 @@ class InventoryController extends \BaseController {
 			    $newproduct->swarn = Input::get('swarn');
 			    $newproduct->save();
 			 
-			    return Redirect::to('/back_end/addProduct')->with('success', true)
+			    return Redirect::to('/back_end/manageProduct')->with('success', true)
                     		->with('message','Product Added Successfully');
 				        }
 	}

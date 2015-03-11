@@ -66,22 +66,6 @@
                 </div>
                   <div class="panel-body">
                     <div class="table-responsive">
-                      @if ($errors->any())
-                       
-                      <ul style="color:red;">
-                       
-                        {{ implode('', $errors->all('<li>:message</li>')) }}
-                       
-                      </ul>
-                       
-                        @endif
-
-                        @if(Session::has('success'))
-                          <div class="alert alert-success">
-                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                          <strong>Complete your Registration!</strong> {{ Session::get('message', '') }}
-                          </div>
-                      @endif
 
                       <div id="formDiv">
                       {{ Form::open(array('url' => '/back_end/addcategory', 'method' => 'post')) }}
