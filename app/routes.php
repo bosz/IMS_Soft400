@@ -109,11 +109,10 @@ Route::get('/register/signup_user', function()
 
 //This is for backend routine
 
-Route::get('/back_end/addProduct', function()
-{
-	return View::make('/back_end/addProduct');
-
-});
+Route::get('/back_end/addProduct', array(
+		'uses' => 'InventoryController@display',
+		'as' => 'manageproduct.display'
+));
 
 Route::get('/back_end/manageProduct', array(
 		'uses' => 'InventoryController@displayInformation',
