@@ -84,10 +84,16 @@
                       @endif
 
                       <div id="formDiv">
-                      {{ Form::open(array('url' => '#', 'method' => 'post')) }}
+                      {{ Form::open(array('url' => '/back_end/addcategory', 'method' => 'post')) }}
                         <div class="top-margin">
                           <label>Category Name<span class="text-danger">*</span></label>
                           {{ Form::text('cname', Input::old('cname'), array('placeholder'=>'Enter Category Name',
+                           'class' => 'form-control')) }}
+                        </div>
+
+                        <div class="top-margin">
+                          <label>Category Description:<span class="text-danger">*</span></label>
+                          {{ Form::textarea('description', Input::old('cname'), array('placeholder'=>'Enter Category Name',
                            'class' => 'form-control')) }}
                         </div>
 

@@ -31,7 +31,31 @@ class CategoryController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		//$confirmation_code = str_random(30);
+		    $data =  Input::except(array('_token')) ;
+            $rule  =  array(
+                    'cname'       	   => 'required',
+                    'description'      => 'required|min:10',
+                ) ;
+
+ 
+            $validator = Validator::make($data,$rule);
+
+	        if($validator->fails())
+	        {
+	            return Redirect::back()->withInput()->withErrors($validator);
+	        }
+	        
+	        else
+	        {
+			    $newcategory = new Category;
+			    $newcategory->cname = Input::get('cname');
+			    $newcategory->description = Input::get('description');
+			    $newcategory->save();
+			 
+			    return Redirect::to('/back_end/manageCategory')->with('success', true)
+                    		->with('message','New category has been add successfully');
+			}
 	}
 
 

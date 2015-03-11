@@ -56,6 +56,23 @@
        </nav>  
        <!-- /. NAV SIDE  -->
        <div id="page-wrapper" >
+
+          @if ($errors->any())
+               
+              <ul style="color:red;">
+               
+              {{ implode('', $errors->all('<li>:message</li>')) }}
+               
+              </ul>
+               
+              @endif
+
+              @if(Session::has('success'))
+                  <div class="alert alert-success">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong></strong> {{ Session::get('message', '') }}
+                  </div>
+              @endif
            <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -67,7 +84,7 @@
                                     <thead>
                                         <tr>
                                             <th>Category Name</th>
-                                            <th align="right">Status</th>
+                                            <th align="right">Description</th>
                                             <th align="center">Action</th>
                                         </tr>
                                     </thead>
@@ -86,11 +103,6 @@
                                             <td>Trident</td>
                                             <td>Internet Explorer 5.5</td>
                                             <td>Win 95+</td>
-                                        </tr>
-                                        <tr class="even gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 6</td>
-                                            <td>Win 98+</td>
                                         </tr>
                                     </tbody>
                                 </table>
