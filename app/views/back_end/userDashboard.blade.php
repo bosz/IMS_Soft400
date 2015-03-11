@@ -42,11 +42,8 @@
                        </ul>
                    </li>
 					         <li>
-<<<<<<< HEAD
                    <a  href="#"><i class="fa fa-qrcode fa-3x"></i><b>Purchase/Order</b></a>
-=======
                    <a  href="#"><i class="fa fa-bar-chart-o fa-3x"></i><b>Purchase/Order</b></a>
->>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
                         <ul style="list-style: none;">
                             <li>{{ HTML::link('/back_end/makePurchase', 'Make Purchase', 
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
@@ -55,9 +52,9 @@
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                         </ul>
-<<<<<<< HEAD
 
                     </li>	
+<<<<<<< HEAD
 =======
                     </li>	
 <<<<<<< HEAD
@@ -71,23 +68,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
-                    </li>	
-                    </li>
-<<<<<<< HEAD
 =======
+>>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
+                    </li>	
+                 </li>	
+                    </li>
 					   <li  >
                        <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
                    </li>	
->>>>>>> rocardho
-<<<<<<< HEAD
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
                     </li>	
+<<<<<<< HEAD
 >>>>>>> d3r1ck
 >>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
 >>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
+=======
+>>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	

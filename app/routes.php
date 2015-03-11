@@ -15,6 +15,7 @@
 Route::get('/', function()
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -37,6 +38,8 @@ Route::get('/', function()
 >>>>>>> d3r1ck
 >>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
 >>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
+=======
+>>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
 	return View::make('index');
 });
 
@@ -136,8 +139,6 @@ Route::get('/back_end/addProduct', array(
 		'uses' => 'InventoryController@display',
 		'as' => 'manageproduct.display'
 ));
-<<<<<<< HEAD
-=======
 
 Route::post('/back_end/delete/{id}', array(
 		'uses' => 'InventoryController@destroy',
@@ -180,6 +181,7 @@ Route::post('/back_end/addproduct', function()
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -199,6 +201,8 @@ Route::post('/back_end/addproduct', function()
 >>>>>>> d3r1ck
 >>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
 >>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
+=======
+>>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');
