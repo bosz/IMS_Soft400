@@ -90,12 +90,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                      @foreach ($results as $result)
                                         <tr class="odd gradeX">
                                             <td>
-
+                                            {{ $result->cname }}
                                             </td>
                                             <td>
-                                            
+                                            {{ $result->description }}
                                             </td>
                                             <td>
                                                 <a href="{{URL::to('/back_end/editCategory')}}" class="btn btn-warning"><i class="fa fa-edit "></i>Edit</a>
@@ -104,6 +105,7 @@
                                                 <a href="" class="btn btn-danger"><i class="fa fa-trash-o"></i></i> Delete</a>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
