@@ -43,7 +43,6 @@
                    </li>
 					         <li>
                    <a  href="#"><i class="fa fa-qrcode fa-3x"></i><b>Purchase/Order</b></a>
-                   <a  href="#"><i class="fa fa-bar-chart-o fa-3x"></i><b>Purchase/Order</b></a>
                         <ul style="list-style: none;">
                             <li>{{ HTML::link('/back_end/makePurchase', 'Make Purchase', 
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
@@ -53,20 +52,6 @@
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                         </ul>
 
-                    </li>	
-
-                    </li>	
-
-                    </li>	
-                    </li>
-                    </li>	
-
-                    </li>	
-                 </li>	
-                    </li>
-					   <li  >
-                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
-                   </li>	
                     </li>	
 
                      <li  >
