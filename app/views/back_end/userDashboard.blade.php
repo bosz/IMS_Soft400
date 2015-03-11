@@ -52,7 +52,13 @@
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                         </ul>
 
+<<<<<<< HEAD
                     </li>		
+=======
+                    </li>	
+      
+                    </li>	
+>>>>>>> 13b2a76dccab73ac35279635721a67d9793e56ef
 
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
