@@ -54,22 +54,13 @@
                         </ul>
 
                     </li>	
-<<<<<<< HEAD
-=======
+
                     </li>	
-<<<<<<< HEAD
 
                     </li>	
                     </li>
                     </li>	
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
-=======
->>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
+
                     </li>	
                  </li>	
                     </li>
@@ -77,12 +68,7 @@
                        <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
                    </li>	
                     </li>	
-<<<<<<< HEAD
->>>>>>> d3r1ck
->>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
->>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
-=======
->>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
+
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	

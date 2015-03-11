@@ -14,32 +14,6 @@
 
 Route::get('/', function()
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> rocardho
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
-=======
-
->>>>>>> rocardho
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> d3r1ck
->>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
->>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
-=======
->>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
 	return View::make('index');
 });
 
@@ -144,7 +118,6 @@ Route::post('/back_end/delete/{id}', array(
 		'uses' => 'InventoryController@destroy',
 		'as' => 'manageproduct.destroy'
 ));
->>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
 
 Route::get('/back_end/manageProduct', array(
 		'uses' => 'InventoryController@displayInformation',
@@ -180,29 +153,6 @@ Route::post('/back_end/addproduct', function()
         return $addproduct->store();
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-
->>>>>>> rocardho
-=======
->>>>>>> d3r1ck
->>>>>>> 3274c60b67e5383e35dbe56815025d1c1f1ceb71
->>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
-=======
->>>>>>> 8d6427e3d531b27ab38d698843a550ef8e559585
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');
@@ -215,20 +165,12 @@ Route::get('/back_end/purchaseManagement', function()
 
 });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
 Route::get('/back_end/editCategories', function()
 {
 	return View::make('/back_end/editCategories');
 
 });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 73474c314a76db2dc67b715f991b4e32ba2bd4be
 Route::post('/back_end/addcategory', function()
 {
         $addcategory = new CategoryController();
