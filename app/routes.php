@@ -14,6 +14,10 @@
 
 Route::get('/', function()
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> rocardho
 	return View::make('index');
 });
 
@@ -127,10 +131,16 @@ Route::get('/back_end/addCategory', function()
 	return View::make('/back_end/addCategory');
 });
 
-Route::get('/back_end/manageCategory', function()
+Route::get('/back_end/manageCategory', array(
+		'uses' => 'CategoryController@displayCategory',
+		'as' => 'managecategory.displayCategory'
+));
+
+/*Route::get('/back_end/manageCategory', function()
 {
 	return View::make('/back_end/manageCategory');
 });
+*/
 
 Route::get('/back_end/editCategory', function()
 {
@@ -143,6 +153,10 @@ Route::post('/back_end/addproduct', function()
         return $addproduct->store();
 });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> rocardho
 Route::get('/back_end/makePurchase', function()
 {
 	return View::make('/back_end/makePurchase');
