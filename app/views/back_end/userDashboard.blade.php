@@ -42,7 +42,7 @@
                        </ul>
                    </li>
 					         <li>
-                   <a  href="#"><i class="fa fa-desktop fa-3x"></i><b>Purchase/Order</b></a>
+                   <a  href="#"><i class="fa fa-qrcode fa-3x"></i><b>Purchase/Order</b></a>
                         <ul style="list-style: none;">
                             <li>{{ HTML::link('/back_end/makePurchase', 'Make Purchase', 
                               array('class' => 'fa fa-forward fa-1x', 'style' => 'font-weight: bolder; text-decoration: none; 
@@ -52,24 +52,9 @@
                               font-size: 16px; color: white; padding: 10px;')) }}</li>
                         </ul>
 
-<<<<<<< HEAD
                     </li>	
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
                     </li>	
-=======
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
                     </li>
-					   <li  >
-                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
-                   </li>	
->>>>>>> rocardho
-<<<<<<< HEAD
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
-=======
->>>>>>> 2f01fdcabc8d74eb6128e3854802f7ae5b8801b7
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	
