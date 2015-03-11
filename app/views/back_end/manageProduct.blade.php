@@ -42,15 +42,9 @@
                        </ul>
 
                    </li>
-<<<<<<< HEAD
-					   <li  >
-                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
-=======
 
-					        <li>
-                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase </b></a>
->>>>>>> rocardho
-                   </li>	
+					         <li>
+                       <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i><b> Purchase/Order </b></a>
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>
                    </li>	
