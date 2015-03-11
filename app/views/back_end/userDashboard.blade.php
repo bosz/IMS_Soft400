@@ -53,12 +53,24 @@
                         </ul>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3685a55215188a4284c66550f450cbe7d7fe5337
                     </li>		
 =======
                     </li>	
       
                     </li>	
 >>>>>>> 13b2a76dccab73ac35279635721a67d9793e56ef
+<<<<<<< HEAD
+=======
+=======
+                    </li>	
+      
+                    </li>	
+>>>>>>> 13b2a76dccab73ac35279635721a67d9793e56ef
+>>>>>>> 3685a55215188a4284c66550f450cbe7d7fe5337
 
                      <li  >
                        <a  href="table.html"><i class="fa fa-table fa-3x"></i><b> Financial Reports </b></a>

@@ -58,9 +58,16 @@ return array(
 			'database'  => 'ims_soft400',
 			'username'  => 'root',
 <<<<<<< HEAD
+<<<<<<< HEAD
 			'password'  => 'isidore123',
 =======
 			'password'  => 'kulachen',
+=======
+			'password'  => 'kulachen',
+<<<<<<< HEAD
+>>>>>>> 13b2a76dccab73ac35279635721a67d9793e56ef
+=======
+>>>>>>> 3685a55215188a4284c66550f450cbe7d7fe5337
 >>>>>>> 13b2a76dccab73ac35279635721a67d9793e56ef
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
